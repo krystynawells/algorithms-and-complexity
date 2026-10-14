@@ -1,0 +1,109 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.17.6"
+  },
+  "cells": [
+    {
+      "id": "MJUe",
+      "code_hash": "8bc4154add856fcfbdf6233eace08564",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"task-1\">Task 1:</h2>\n<span class=\"paragraph\">Implement the Linear Search Algorithm for an arbitrary input array</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "da025194347e90e9367e0cb10b0f8419",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"task-2\">Task 2</h2>\n<span class=\"paragraph\">Create an array of 500 elements, where the array is not sorted and has elements from 0 to 499 with no repetitions (Hint: use <code>np.arange()</code> and then <code>np.random.shuffle()</code>).\nThen, call the <code>search()</code> function to find number 10 in the array. Calculate the time it takes to find the number.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "328848b31a2cd98a2d8b082c19ffaec3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"task-3\">Task 3</h2>\n<span class=\"paragraph\">Repeat the process in Task 2 for 1000 different arrays (all of them of size 500), and store the elapsed time for each one of these runs. Then plot a frequency histogram for the time values.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "a4d7644ae884fba4aaf6854acb956376",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"task-4\">Task 4:</h2>\n<span class=\"paragraph\">Implement the Binary Search Algorithm for a sorted input array.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "971711d7990b41005606f72e504d0ea3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"task-5\">Task 5:</h2>\n<span class=\"paragraph\">Implement the Recursive Binary Search Algorithm for a sorted input array.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hbol",
+      "code_hash": "42e029cf3a5d39c62d28528b3a4fc702",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "a9d7acd73d467d9bda90948d73111934",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "580978e570ce277b1413456484b66f9f",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "c45b09832a42df2acd40c28cc767ddc4",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "0ecc7504c5db34564c8aa7ce81bce176",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "efcf639db2e41009cc5f1307b8df4f99",
+      "outputs": [],
+      "console": []
+    }
+  ]
+}

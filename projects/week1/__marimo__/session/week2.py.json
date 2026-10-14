@@ -1,0 +1,177 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.17.6"
+  },
+  "cells": [
+    {
+      "id": "vblA",
+      "code_hash": "47bf69be2a42746e337a88c8d8fcb8e7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><hr /></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "f476d66bd940e747438ca5e86fd63ef3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><div style=\"border:2px solid #ffb6c1; border-radius:12px; padding:16px; background:#fff5f8;\">\n  <h3 style=\"margin:0 0 8px 0;\"> Leadership & Involvement</h3>\n  <details open>\n    <summary><strong>FinTech Society, UAL \u2014 Treasurer & Acting Vice President (2024 \u2013 Present)</strong></summary>\n    <ul style=\"margin-top:8px;\">\n      <li>Oversee society finances, budgeting, and event planning for a growing student-led FinTech community</li>\n      <li>Spearhead engagement initiatives and first-year outreach</li>\n      <li>Organize speaker events exploring blockchain, digital banking, and AI in finance</li>\n    </ul>\n  </details>\n  <details>\n    <summary><strong> Tech Trailblazers Blog \u2014 Founder & Writer (2024 \u2013 Present)</strong></summary>\n    <ul style=\"margin-top:8px;\">\n      <li>Founded a blog championing women in technology through interviews, insights, and stories from the field</li>\n      <li>Conduct interviews with researchers and professionals</li>\n      <li>Write articles on AI, IoT, and gender diversity in tech</li>\n    </ul>\n  </details>\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "55a6be2697e3792da6c165309a515f13",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"my-experience\">\u272e\u22c6\u02d9 My Experience \u272e\u22c6\u02d9</h2>\n<span class=\"paragraph\">\u2605 Use the slider to see my timeline \u2605</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hbol",
+      "code_hash": "f065175aefd346736283485db6462b4f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "7cd743fba8afc83100e25a3e10658775",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: row;justify-content: space-between;align-items: center;flex-wrap: nowrap;gap: xlrem'><div style='display: flex;flex: 1;flex-direction: row;justify-content: space-between;align-items: center;flex-wrap: nowrap;gap: xlrem'><img src='https://raw.githubusercontent.com/krystynawells/profile-assets/main/Screenshot%202025-10-08%20at%2011.46.27.png' style='width: 200px;height: 140px;border-radius: 4px' /><div style='display: flex;flex: 1;flex-direction: column;justify-content: center;align-items: flex-start;flex-wrap: nowrap;gap: xsrem'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><span style='font-size:32px; font-weight:600;'>Krystyna Wells</span></span></span><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><span style='font-size:20px; color:#555; font-style:italic;'>BSc Computer Science (Year 2)</span></span></span></div></div><img src='https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExamRrY2VxZTlxMGJpdnB5eWhzdXlvbnVwOGNnZ3FtdXNjcTVrMHBpciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/R6oW8JAJxqRxe/giphy.gif' style='width: 180px;height: auto;border-radius: 4px' /></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "57933aab508eca3d80db2b7de49fc3ff",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><div style=\"\n    border: 2px solid #ffb6c1;\n    border-radius: 12px;\n    padding: 16px;\n    background-color: #fff5f8;\n    box-shadow: 2px 2px 6px rgba(255, 182, 193, 0.2);\n\">\n    <h3 style=\"margin-top:0;\">\ud83d\udcab About Me</h3>\n    <span class=\"paragraph\">\n        Hi! I'm <strong>Krystyna Wells</strong>, a second-year Computer Science student\n        at the <strong>University of the Arts London</strong>.\n        I\u2019m passionate about combining creativity and technology \u2014\n        from building IoT systems to exploring AI for design and interaction.\n        Currently, I\u2019m the <strong>Treasurer of the FinTech Society</strong>,\n        and I love collaborating on hands-on tech projects.\n    </span>\n</div></span></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "df08966ec44a74ba0f0e0dead895d6a6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='lEQa-0' random-id='e3a84098-0482-45be-c35f-baf24878661a'><marimo-dropdown data-initial-value='[&quot;IoT Desk Health Helper&quot;]' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Choose a project&lt;/span&gt;&lt;/span&gt;&quot;' data-options='[&quot;IoT Desk Health Helper&quot;,&quot;Text Classifier Tool&quot;,&quot;Tech Trailblazers Blog&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false'></marimo-dropdown></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "650703327e4e472d65ae74818628aec2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><div style=\"border:1px solid #ffd6e2; border-radius:12px; padding:14px; background:#fff; margin-top:10px;\">\n    <div style=\"font-size:18px; font-weight:600; margin-bottom:4px;\">\n        IoT Desk Health Helper\n    </div>\n    <div style=\"color:#666; margin-bottom:8px;\">\n        IoT, ESP8266, MQTT, Python\n    </div>\n    <div style=\"margin-bottom:10px;\">An IoT-based desk health assistant that helps promote healthier study and work habits. The system reminds users to stay hydrated, maintain a good sitting distance from the screen, and ensure a comfortable workspace environment.</div>\n    <a href=\"https://github.com/krystynawells/IoT-Desk-Assisstant\" target=\"_blank\" style=\"\n        display:inline-block; padding:8px 12px; border-radius:10px;\n        border:1px solid #ffb6c1; text-decoration:none;\n    \">\ud83d\udd17 View on GitHub</a>\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "6b70ca525ae2d764e03188d318cf2ebc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "3a61f43072e2a38e29fa22f3b166e64c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-ui-element object-id='RGSE-0' random-id='cd35d0a5-fb32-9121-87a9-51a95f7f13fe'><marimo-slider data-initial-value='2025' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Select Year&lt;/span&gt;&lt;/span&gt;&quot;' data-start='2022' data-stop='2025' data-step='1' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element><span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"2024-started-my-computer-science-degree-enrolled-in-my-computer-science-programme-at-ual-where-i-began-learning-core-programming-concepts-and-developing-a-passion-for-tech-and-problem-solving\">2024 - Started my Computer Science degree \ud83c\uddec\ud83c\udde7<br>Enrolled in my Computer Science programme at UAL, where I began learning core programming concepts and developing a passion for tech and problem-solving</h3></span></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "b999568767d8046b6d5a71358fe43111",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='Hstk-0' random-id='6346e13f-9b8c-e8df-3c2a-25193a37a9b5'><marimo-plotly data-initial-value='{}' data-label='null' data-figure='{&quot;data&quot;:[{&quot;fill&quot;:&quot;toself&quot;,&quot;marker&quot;:{&quot;color&quot;:&quot;rgba(255, 99, 132, 0.6)&quot;},&quot;name&quot;:&quot;Skills (2024)&quot;,&quot;r&quot;:[70,46,70,65,70,65],&quot;theta&quot;:[&quot;Python&quot;,&quot;IoT / Hardware&quot;,&quot;Writing &amp; Communication&quot;,&quot;Problem Solving&quot;,&quot;Leadership&quot;,&quot;Creative Tech&quot;],&quot;type&quot;:&quot;scatterpolar&quot;}],&quot;layout&quot;:{&quot;template&quot;:{&quot;data&quot;:{&quot;histogram2dcontour&quot;:[{&quot;type&quot;:&quot;histogram2dcontour&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;},&quot;colorscale&quot;:[[0.0,&quot;#0d0887&quot;],[0.1111111111111111,&quot;#46039f&quot;],[0.2222222222222222,&quot;#7201a8&quot;],[0.3333333333333333,&quot;#9c179e&quot;],[0.4444444444444444,&quot;#bd3786&quot;],[0.5555555555555556,&quot;#d8576b&quot;],[0.6666666666666666,&quot;#ed7953&quot;],[0.7777777777777778,&quot;#fb9f3a&quot;],[0.8888888888888888,&quot;#fdca26&quot;],[1.0,&quot;#f0f921&quot;]]}],&quot;choropleth&quot;:[{&quot;type&quot;:&quot;choropleth&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}],&quot;histogram2d&quot;:[{&quot;type&quot;:&quot;histogram2d&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;},&quot;colorscale&quot;:[[0.0,&quot;#0d0887&quot;],[0.1111111111111111,&quot;#46039f&quot;],[0.2222222222222222,&quot;#7201a8&quot;],[0.3333333333333333,&quot;#9c179e&quot;],[0.4444444444444444,&quot;#bd3786&quot;],[0.5555555555555556,&quot;#d8576b&quot;],[0.6666666666666666,&quot;#ed7953&quot;],[0.7777777777777778,&quot;#fb9f3a&quot;],[0.8888888888888888,&quot;#fdca26&quot;],[1.0,&quot;#f0f921&quot;]]}],&quot;heatmap&quot;:[{&quot;type&quot;:&quot;heatmap&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;},&quot;colorscale&quot;:[[0.0,&quot;#0d0887&quot;],[0.1111111111111111,&quot;#46039f&quot;],[0.2222222222222222,&quot;#7201a8&quot;],[0.3333333333333333,&quot;#9c179e&quot;],[0.4444444444444444,&quot;#bd3786&quot;],[0.5555555555555556,&quot;#d8576b&quot;],[0.6666666666666666,&quot;#ed7953&quot;],[0.7777777777777778,&quot;#fb9f3a&quot;],[0.8888888888888888,&quot;#fdca26&quot;],[1.0,&quot;#f0f921&quot;]]}],&quot;heatmapgl&quot;:[{&quot;type&quot;:&quot;heatmapgl&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;},&quot;colorscale&quot;:[[0.0,&quot;#0d0887&quot;],[0.1111111111111111,&quot;#46039f&quot;],[0.2222222222222222,&quot;#7201a8&quot;],[0.3333333333333333,&quot;#9c179e&quot;],[0.4444444444444444,&quot;#bd3786&quot;],[0.5555555555555556,&quot;#d8576b&quot;],[0.6666666666666666,&quot;#ed7953&quot;],[0.7777777777777778,&quot;#fb9f3a&quot;],[0.8888888888888888,&quot;#fdca26&quot;],[1.0,&quot;#f0f921&quot;]]}],&quot;contourcarpet&quot;:[{&quot;type&quot;:&quot;contourcarpet&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}],&quot;contour&quot;:[{&quot;type&quot;:&quot;contour&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;},&quot;colorscale&quot;:[[0.0,&quot;#0d0887&quot;],[0.1111111111111111,&quot;#46039f&quot;],[0.2222222222222222,&quot;#7201a8&quot;],[0.3333333333333333,&quot;#9c179e&quot;],[0.4444444444444444,&quot;#bd3786&quot;],[0.5555555555555556,&quot;#d8576b&quot;],[0.6666666666666666,&quot;#ed7953&quot;],[0.7777777777777778,&quot;#fb9f3a&quot;],[0.8888888888888888,&quot;#fdca26&quot;],[1.0,&quot;#f0f921&quot;]]}],&quot;surface&quot;:[{&quot;type&quot;:&quot;surface&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;},&quot;colorscale&quot;:[[0.0,&quot;#0d0887&quot;],[0.1111111111111111,&quot;#46039f&quot;],[0.2222222222222222,&quot;#7201a8&quot;],[0.3333333333333333,&quot;#9c179e&quot;],[0.4444444444444444,&quot;#bd3786&quot;],[0.5555555555555556,&quot;#d8576b&quot;],[0.6666666666666666,&quot;#ed7953&quot;],[0.7777777777777778,&quot;#fb9f3a&quot;],[0.8888888888888888,&quot;#fdca26&quot;],[1.0,&quot;#f0f921&quot;]]}],&quot;mesh3d&quot;:[{&quot;type&quot;:&quot;mesh3d&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}],&quot;scatter&quot;:[{&quot;fillpattern&quot;:{&quot;fillmode&quot;:&quot;overlay&quot;,&quot;size&quot;:10,&quot;solidity&quot;:0.2},&quot;type&quot;:&quot;scatter&quot;}],&quot;parcoords&quot;:[{&quot;type&quot;:&quot;parcoords&quot;,&quot;line&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;scatterpolargl&quot;:[{&quot;type&quot;:&quot;scatterpolargl&quot;,&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;bar&quot;:[{&quot;error_x&quot;:{&quot;color&quot;:&quot;#2a3f5f&quot;},&quot;error_y&quot;:{&quot;color&quot;:&quot;#2a3f5f&quot;},&quot;marker&quot;:{&quot;line&quot;:{&quot;color&quot;:&quot;#E5ECF6&quot;,&quot;width&quot;:0.5},&quot;pattern&quot;:{&quot;fillmode&quot;:&quot;overlay&quot;,&quot;size&quot;:10,&quot;solidity&quot;:0.2}},&quot;type&quot;:&quot;bar&quot;}],&quot;scattergeo&quot;:[{&quot;type&quot;:&quot;scattergeo&quot;,&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;scatterpolar&quot;:[{&quot;type&quot;:&quot;scatterpolar&quot;,&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;histogram&quot;:[{&quot;marker&quot;:{&quot;pattern&quot;:{&quot;fillmode&quot;:&quot;overlay&quot;,&quot;size&quot;:10,&quot;solidity&quot;:0.2}},&quot;type&quot;:&quot;histogram&quot;}],&quot;scattergl&quot;:[{&quot;type&quot;:&quot;scattergl&quot;,&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;scatter3d&quot;:[{&quot;type&quot;:&quot;scatter3d&quot;,&quot;line&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}},&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;scattermapbox&quot;:[{&quot;type&quot;:&quot;scattermapbox&quot;,&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;scatterternary&quot;:[{&quot;type&quot;:&quot;scatterternary&quot;,&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;scattercarpet&quot;:[{&quot;type&quot;:&quot;scattercarpet&quot;,&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;carpet&quot;:[{&quot;aaxis&quot;:{&quot;endlinecolor&quot;:&quot;#2a3f5f&quot;,&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;minorgridcolor&quot;:&quot;white&quot;,&quot;startlinecolor&quot;:&quot;#2a3f5f&quot;},&quot;baxis&quot;:{&quot;endlinecolor&quot;:&quot;#2a3f5f&quot;,&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;minorgridcolor&quot;:&quot;white&quot;,&quot;startlinecolor&quot;:&quot;#2a3f5f&quot;},&quot;type&quot;:&quot;carpet&quot;}],&quot;table&quot;:[{&quot;cells&quot;:{&quot;fill&quot;:{&quot;color&quot;:&quot;#EBF0F8&quot;},&quot;line&quot;:{&quot;color&quot;:&quot;white&quot;}},&quot;header&quot;:{&quot;fill&quot;:{&quot;color&quot;:&quot;#C8D4E3&quot;},&quot;line&quot;:{&quot;color&quot;:&quot;white&quot;}},&quot;type&quot;:&quot;table&quot;}],&quot;barpolar&quot;:[{&quot;marker&quot;:{&quot;line&quot;:{&quot;color&quot;:&quot;#E5ECF6&quot;,&quot;width&quot;:0.5},&quot;pattern&quot;:{&quot;fillmode&quot;:&quot;overlay&quot;,&quot;size&quot;:10,&quot;solidity&quot;:0.2}},&quot;type&quot;:&quot;barpolar&quot;}],&quot;pie&quot;:[{&quot;automargin&quot;:true,&quot;type&quot;:&quot;pie&quot;}]},&quot;layout&quot;:{&quot;autotypenumbers&quot;:&quot;strict&quot;,&quot;colorway&quot;:[&quot;#636efa&quot;,&quot;#EF553B&quot;,&quot;#00cc96&quot;,&quot;#ab63fa&quot;,&quot;#FFA15A&quot;,&quot;#19d3f3&quot;,&quot;#FF6692&quot;,&quot;#B6E880&quot;,&quot;#FF97FF&quot;,&quot;#FECB52&quot;],&quot;font&quot;:{&quot;color&quot;:&quot;#2a3f5f&quot;},&quot;hovermode&quot;:&quot;closest&quot;,&quot;hoverlabel&quot;:{&quot;align&quot;:&quot;left&quot;},&quot;paper_bgcolor&quot;:&quot;white&quot;,&quot;plot_bgcolor&quot;:&quot;#E5ECF6&quot;,&quot;polar&quot;:{&quot;bgcolor&quot;:&quot;#E5ECF6&quot;,&quot;angularaxis&quot;:{&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;ticks&quot;:&quot;&quot;},&quot;radialaxis&quot;:{&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;ticks&quot;:&quot;&quot;}},&quot;ternary&quot;:{&quot;bgcolor&quot;:&quot;#E5ECF6&quot;,&quot;aaxis&quot;:{&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;ticks&quot;:&quot;&quot;},&quot;baxis&quot;:{&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;ticks&quot;:&quot;&quot;},&quot;caxis&quot;:{&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;ticks&quot;:&quot;&quot;}},&quot;coloraxis&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}},&quot;colorscale&quot;:{&quot;sequential&quot;:[[0.0,&quot;#0d0887&quot;],[0.1111111111111111,&quot;#46039f&quot;],[0.2222222222222222,&quot;#7201a8&quot;],[0.3333333333333333,&quot;#9c179e&quot;],[0.4444444444444444,&quot;#bd3786&quot;],[0.5555555555555556,&quot;#d8576b&quot;],[0.6666666666666666,&quot;#ed7953&quot;],[0.7777777777777778,&quot;#fb9f3a&quot;],[0.8888888888888888,&quot;#fdca26&quot;],[1.0,&quot;#f0f921&quot;]],&quot;sequentialminus&quot;:[[0.0,&quot;#0d0887&quot;],[0.1111111111111111,&quot;#46039f&quot;],[0.2222222222222222,&quot;#7201a8&quot;],[0.3333333333333333,&quot;#9c179e&quot;],[0.4444444444444444,&quot;#bd3786&quot;],[0.5555555555555556,&quot;#d8576b&quot;],[0.6666666666666666,&quot;#ed7953&quot;],[0.7777777777777778,&quot;#fb9f3a&quot;],[0.8888888888888888,&quot;#fdca26&quot;],[1.0,&quot;#f0f921&quot;]],&quot;diverging&quot;:[[0,&quot;#8e0152&quot;],[0.1,&quot;#c51b7d&quot;],[0.2,&quot;#de77ae&quot;],[0.3,&quot;#f1b6da&quot;],[0.4,&quot;#fde0ef&quot;],[0.5,&quot;#f7f7f7&quot;],[0.6,&quot;#e6f5d0&quot;],[0.7,&quot;#b8e186&quot;],[0.8,&quot;#7fbc41&quot;],[0.9,&quot;#4d9221&quot;],[1,&quot;#276419&quot;]]},&quot;xaxis&quot;:{&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;ticks&quot;:&quot;&quot;,&quot;title&quot;:{&quot;standoff&quot;:15},&quot;zerolinecolor&quot;:&quot;white&quot;,&quot;automargin&quot;:true,&quot;zerolinewidth&quot;:2},&quot;yaxis&quot;:{&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;ticks&quot;:&quot;&quot;,&quot;title&quot;:{&quot;standoff&quot;:15},&quot;zerolinecolor&quot;:&quot;white&quot;,&quot;automargin&quot;:true,&quot;zerolinewidth&quot;:2},&quot;scene&quot;:{&quot;xaxis&quot;:{&quot;backgroundcolor&quot;:&quot;#E5ECF6&quot;,&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;showbackground&quot;:true,&quot;ticks&quot;:&quot;&quot;,&quot;zerolinecolor&quot;:&quot;white&quot;,&quot;gridwidth&quot;:2},&quot;yaxis&quot;:{&quot;backgroundcolor&quot;:&quot;#E5ECF6&quot;,&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;showbackground&quot;:true,&quot;ticks&quot;:&quot;&quot;,&quot;zerolinecolor&quot;:&quot;white&quot;,&quot;gridwidth&quot;:2},&quot;zaxis&quot;:{&quot;backgroundcolor&quot;:&quot;#E5ECF6&quot;,&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;showbackground&quot;:true,&quot;ticks&quot;:&quot;&quot;,&quot;zerolinecolor&quot;:&quot;white&quot;,&quot;gridwidth&quot;:2}},&quot;shapedefaults&quot;:{&quot;line&quot;:{&quot;color&quot;:&quot;#2a3f5f&quot;}},&quot;annotationdefaults&quot;:{&quot;arrowcolor&quot;:&quot;#2a3f5f&quot;,&quot;arrowhead&quot;:0,&quot;arrowwidth&quot;:1},&quot;geo&quot;:{&quot;bgcolor&quot;:&quot;white&quot;,&quot;landcolor&quot;:&quot;#E5ECF6&quot;,&quot;subunitcolor&quot;:&quot;white&quot;,&quot;showland&quot;:true,&quot;showlakes&quot;:true,&quot;lakecolor&quot;:&quot;white&quot;},&quot;title&quot;:{&quot;x&quot;:0.05},&quot;mapbox&quot;:{&quot;style&quot;:&quot;light&quot;}}},&quot;polar&quot;:{&quot;radialaxis&quot;:{&quot;visible&quot;:true,&quot;range&quot;:[0,100]}},&quot;showlegend&quot;:false,&quot;title&quot;:{&quot;text&quot;:&quot;\u2b50 Skills Overview \u2013 2024&quot;},&quot;width&quot;:500,&quot;height&quot;:450}}' data-config='{}'></marimo-plotly></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}

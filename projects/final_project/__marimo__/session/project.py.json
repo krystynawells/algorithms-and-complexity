@@ -1,0 +1,446 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.17.6"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "d307df56d619a385d191794d51aca750",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><!--======================================================\n# Project Header + Introduction\n# ====================================================-->\n<div style=\"\n\n    background-color: #D7FCFC;\n    padding: 32px;\n    border-radius: 12px;\n    margin-bottom: 30px;\n    color: white;\n\n\">\n\n<h1 style=\"margin: 10px 0 0; font-weight: 400; font-size: 3rem;\">\n    Trend Tracker For Fashion\n\n</h1>\n\n<h2 style=\"margin: 10px 0 0; font-weight: 400; font-size: 1.2rem;\">\n    Algorithms and Complexity - Final Project\n\n</h2>\n\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "9f802da818ad40635114dbe907812566",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><!-- Project Introduction-->\n\n<div style=\"\n    background-color: #D7FCFC;\n    border-left: 6px solid #2bb3a3;\n    padding: 22px 26px;\n    border-radius: 12px;\n    margin: 24px 0;\n    max-width: 1000px;\n\">\n\n<h3 style=\"\n    margin-top: 0;\n    color: #0f4f4b;\n\">\nProject Introduction\n</h3>\n\n<p style=\"\n    margin: 0;\n    color: #244;\n    line-height: 1.6;\n    font-size: 0.95rem;\n\">\n\n<span class=\"paragraph\">\nThis project presents a prototype Trend Tracker for Fashion, an interactive analytical tool designed to explore how fashion trends change, peak, relate to one another, and can be classified over time.\n</span>\n\n<span class=\"paragraph\">\nUsing a small seasonal fashion dataset, the tool allows users to analyse trend growth, identify peak popularity, explore relationships between trends, and experiment with predictive classification through interactive visualisations and UI controls. Each section of the app focuses on a different algorithmic technique: sorting, searching, graph traversal, and machine learning.\n</span>\n\n<span class=\"paragraph\">\nThe project emphasises algorithm choice, time complexity, and practical trade-offs, showing how different approaches suit different analytical tasks. By combining visual outputs with critical analysis, the Trend Tracker highlights not only how these algorithms work but also their limitations, assumptions, and potential biases.\n</span>\n\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "f5c701170e929adec0199109fd84300b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><!--======================================================\n# Algortihm One Header + Introduction\n# ====================================================-->\n<div style=\"\n    background-color: #FFD1B0;\n    border-left: 6px solid #f58f4c;\n    padding: 16px 20px;\n    border-radius: 8px;\n    margin: 20px 0;\n\">\n\n<h2 style=\"margin-top: 0; color: #0f4f4b;\">\n\u05c2\u27a4 Algorithm 1: Sorting Trend Growth (Merge Sort)\n</h2>\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "2cef1f33652515da61fdf9135799c831",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><div style=\"\nbackground-color: #FFD1B0;\nborder-left: 6px solid #F58F4C;\npadding: 16px 20px;\nborder-radius: 10px;\nmargin: 20px 0;\n\">\n\n<h3 style=\"margin-top: 0;\">Introduction \u2013 Algorithm 1</h3>\n\nAlgorithm 1 uses Merge Sort to rank fashion trends based on their growth between the first and last seasons in the dataset. Sorting is required because the goal is not just to find a single maximum or minimum trend, but to compare all trends relative to one another. Merge Sort was chosen because it guarantees a time complexity of O(n log n), making it efficient and predictable even as the dataset size increases. Unlike simpler algorithms such as Bubble Sort, Merge Sort scales well, making it an appropriate choice for analysing and visualising trend growth in a structured and computationally efficient way.\n\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "139bcfacbd52dc9934055f81c8cdf305",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><!--======================================================\n# Algorithm One Critical Analysis\n# ====================================================-->\n\n<div style=\"\n    background-color: #FFD1B0;\n    border-left: 6px solid #f58f4c;\n    padding: 16px 20px;\n    border-radius: 8px;\n    margin: 20px 0;\n    color: #044b4b;\n    font-size: 0.95rem;\n\">\n\n<h3 style=\"margin-top: 0;\">Critical Analysis \u2014 Algorithm 1</h3>\n\n<span class=\"paragraph\">\nAlgorithm 1 applies Merge Sort to rank fashion trends based on their growth between the first and last seasons in the dataset. The Merge Sort algorithm itself is computationally unbiased; it sorts values based on numerical comparison, but bias can still arise from how the input data and growth metric are defined.\n</span>\n\n<span class=\"paragraph\">\nIn this project, trend growth is calculated using only the difference between two seasonal endpoints, which can favour trends that spike late in the dataset while ignoring those with steady growth patterns. This introduces a temporal bias, where short-term increases are prioritised over long-term consistency.\n</span>\n\n<span class=\"paragraph\">\nAdditionally, the dataset is small and synthetic, which means it may not accurately represent the diversity of fashion trends. In real-world applications, this could negatively impact designers, brands, or communities whose styles evolve gradually or fluctuate seasonally, as their trends may be ranked lower. The algorithm also assumes equal importance across all trends, ignoring contextual factors such as cultural relevance.\n</span>\n\n<span class=\"paragraph\">\nWhile Merge Sort remains an appropriate and efficient choice for ordering data, it highlights how important data modelling decisions are in algorithmic fairness. To mitigate these issues, the growth metric could be extended to incorporate seasonal data, reducing sensitivity to endpoint selection. Using larger, real-world datasets would also improve representativeness.\n</span>\n\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "8f3dec3de8a72f2c481a429a73850d8f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><!--======================================================\n# Algorithm Two Header + Introduction\n# =====================================================-->\n\n<div style=\"\n  background-color: #E9DDFF;\n  padding: 20px 24px;\n  border-left: 6px solid #8E6AD9;\n  border-radius: 10px;\n  margin: 24px 0;\n  color: #2d1f4f;\n\">\n\n<h2 style=\"margin: 0; font-weight: 500;\">\n\u27a4 Algorithm 2: Searching for Peak Trends (Linear vs Binary)\n</h2>\n\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "19c6e30b94a83d9b308592042ddfe6cc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><div style=\"\nbackground-color: #E9DDFF;\nborder-left: 6px solid #8E6AD9;\npadding: 16px 20px;\nborder-radius: 8px;\nmargin: 20px 0;\n\">\n\n<h3 style=\"margin-top: 0;\">Introduction \u2013 Algorithm 2</h3>\n\nAlgorithm 2 is used to identify the peak season for a selected fashion trend by locating the maximum value within its seasonal data. This problem is well-suited to search algorithms, as the goal is to find a specific value rather than reorder the entire dataset. A Linear Search is applied to scan all seasonal values, ensuring the true maximum is found with time complexity O(n). A secondary Binary Search approach is included for comparison, highlighting how algorithm choice depends on data structure and problem context. Together, these methods demonstrate fundamental searching techniques and their computational trade-offs.\n\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ROlb",
+      "code_hash": "28cb063be1f0fef79970023ccd88b7c9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><div style=\"\n  background-color: #E9DDFF;\n  padding: 14px 18px;\n  border-left: 5px solid #8E6AD9;\n  border-radius: 10px;\n  margin-bottom: 12px;\n  color: #2d1f4f;\n  font-weight: 500;\n\">\nSelect a trend to analyse (Algorithm 2)\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "DnEU",
+      "code_hash": "e03c192f57bc4f8943d94db813b1b5e4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><div style=\"\n  background-color: #E9DDFF;\n  border-left: 6px solid #8E6AD9;\n  padding: 18px 22px;\n  border-radius: 10px;\n  margin: 20px 0;\n  color: #2d1f4f;\n\">\n\n<h3 style=\"margin-top: 0;\">Critical Analysis \u2013 Algorithm 2</h3>\n\n<span class=\"paragraph\">\nAlgorithm 2 identifies the peak season for a fashion trend using search techniques. A Linear Search is used to scan all seasonal values and return the maximum, while a Binary Search approach is included for comparison. Although the algorithms themselves are deterministic and unbiased in execution, potential bias arises from how the data and the task are defined.\n</span>\n\n<span class=\"paragraph\">\nBy focusing on the single highest seasonal value, this approach introduces a form of peak bias, where trends that experience short-lived spikes are prioritised over those that show consistent or gradual growth. In real-world fashion analysis, this could disadvantage designers, brands, or communities whose styles gain popularity steadily rather than through sudden popularity surges. Additionally, the dataset is small and synthetic, which limits representation.\n</span>\n\n<span class=\"paragraph\">\nTo mitigate these issues, the analysis could incorporate additional measures such as average trend strength, variance across seasons, or multiple peak detection. Using larger, real-world datasets would also reduce representational bias. Overall, Algorithm 2 effectively illustrates searching behaviour while emphasising the importance of data interpretation in algorithmic decision-making.\n</span>\n\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ulZA",
+      "code_hash": "759f523d1a07a2072f8afc345c2c9b1e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><!--======================================================\n# Algorithm Three Header + Introduction\n# =====================================================-->\n\n<div style=\"\n    background-color: #D0F7CD;\n    padding: 16px 20px;\n    border-left: 6px solid #2f855a;\n    border-radius: 8px;\n    margin: 24px 0;\n\">\n  <h2 style=\"margin: 0; color: #065f46;\">\n    \u27a4 Algorithm 3: Graph-Based Trend Relationships (Adjacency list and Breadth-First Search)\n  </h2>\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ecfG",
+      "code_hash": "bc81c0db237de22c3047312532b6a81b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><div style=\"\nbackground-color: #D0F7CD;\nborder-left: 6px solid #22c55e;\npadding: 16px 20px;\nborder-radius: 10px;\nmargin: 20px 0;\n\">\n\n<h3 style=\"margin-top: 0;\">Introduction \u2013 Algorithm 3</h3>\n\nAlgorithm 3 models fashion trends as a graph, where each trend is represented as a node and edges indicate strong co-occurrence between trends within the same season. This approach is appropriate because fashion trends rarely exist in isolation; instead, they often emerge and evolve together. Once the graph is constructed using an adjacency list representation, Breadth-First Search (BFS) is applied to explore connectivity starting from a selected trend. BFS is well-suited to this task as it visits all reachable nodes, allowing the identification of related trends and connected components. This algorithm demonstrates how graph traversal techniques can reveal structural relationships that are not visible through individual trend analysis.\n\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nHfw",
+      "code_hash": "edca3d95d2bfc530a82da76bd4dbdc18",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><!--======================================================\n# Algorithm Three Critical Analysis\n# ====================================================-->\n\n<div style=\"\n    background-color: #D0F7CD;\n    border-left: 6px solid #22c55e;\n    padding: 18px 22px;\n    border-radius: 10px;\n    margin: 24px 0;\n    color: #064e3b;\n\">\n\n<h3 style=\"margin-top: 0;\">Critical Analysis \u2013 Algorithm 3</h3>\n\n<span class=\"paragraph\">\nAlgorithm 3 represents fashion trends as a graph, where nodes correspond to individual trends and edges indicate strong co-occurrence within the same season. While the BFS algorithm itself is unbiased in its traversal, potential bias arises from how the graph is constructed. In particular, the use of a fixed co-occurrence threshold introduces a structural bias: trends that frequently appear together above the threshold are overrepresented, while subtler or emerging relationships may be excluded entirely.\n</span>\n\n<span class=\"paragraph\">\nThis can negatively affect designers, brands, or cultural groups whose styles tend to evolve gradually or appear in niche contexts, as their trends may not meet the threshold required to form graph connections. Additionally, starting BFS from a single trend emphasises that trend\u2019s local neighbourhood, potentially overlooking equally important relationships elsewhere in the graph.\n</span>\n\n<span class=\"paragraph\">\nTo mitigate these effects, adaptive or data-driven thresholds could be used instead of a fixed value, allowing weaker but meaningful relationships to emerge. Multiple BFS runs from different starting nodes could also reduce start-node bias. Using larger, real-world datasets would further improve fairness and representational accuracy. Despite these limitations, Algorithm 3 effectively demonstrates how graph modelling and traversal reveal relational structures.\n</span>\n\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "xXTn",
+      "code_hash": "e774485afedfa99515ed3c72281b97a8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><!--======================================================\n# Algorithm Two Header + Introduction\n# =====================================================-->\n\n<div style=\"\n    background-color: #FFF5A6;\n    border-left: 6px solid #E6C84F;\n    padding: 18px 22px;\n    border-radius: 10px;\n    margin: 28px 0 16px 0;\n    color: #5a4a00;\n\">\n\n<h2 style=\"margin: 0;\">\n    \u27a4 Algorithm 4: Perceptron Trend Classification\n</h2>\n\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "AjVT",
+      "code_hash": "02ffe68fc37bc98e171dab5737d36711",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><div style=\"\nbackground-color: #FFFBDB;\nborder-left: 6px solid #E6C84F;\npadding: 16px 20px;\nborder-radius: 10px;\nmargin: 20px 0;\ncolor: #5a4a00;\n\">\n\n<h3 style=\"margin-top: 0;\">Introduction \u2013 Algorithm 4</h3>\n\nAlgorithm 4 applies a multi-class perceptron to classify fashion styles based on the strength of eight trend features. This algorithm is suitable because it demonstrates a simple and interpretable form of supervised learning, where labelled input data is used to train a model to make predictions on unseen inputs. The perceptron was chosen due to its computational simplicity and linear decision boundaries, making it easy to analyse and relate to time complexity concepts. By combining interactive sliders with the trained model, this algorithm allows users to explore how changes in feature values influence classification outcomes. A separate synthetic dataset is used for this algorithm to provide enough labelled training examples for the perceptron.\n\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "yCnT",
+      "code_hash": "ad9f231f383c9cb903d0acdccebfc2e3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><!--======================================================\n# Algorithm Four Critical Analysis\n# ====================================================-->\n<div style=\"\n    background-color: #FFFBDB;\n    border-left: 6px solid #E6C84F;\n    padding: 18px 22px;\n    border-radius: 10px;\n    margin: 24px 0;\n    color: #5a4a00;\n\">\n\n<h3 style=\"margin-top: 0;\">Critical Analysis \u2013 Algorithm 4</h3>\n\n<span class=\"paragraph\">\nAlgorithm 4 uses a multi-class perceptron to classify fashion styles based on the strength of eight trend features. While the perceptron algorithm itself is deterministic, potential bias arises primarily from the training data and labelling process rather than from the learning mechanism. In this project, the labels are based on simple rules, which may reflect subjective choices about what defines each style.\n</span>\n\n<span class=\"paragraph\">\nThis can negatively affect fashion styles that do not conform strongly to predefined categories, such as hybrid aesthetics, as the perceptron is forced to assign each input to a single class. Additionally, because the perceptron is a linear classifier, it cannot capture complex or non-linear relationships between features, which may oversimplify real-world fashion dynamics. As a result, some combinations of trend features may be systematically misclassified.\n</span>\n\n<span class=\"paragraph\">\nAlgorithm 4 effectively demonstrates key supervised learning concepts while highlighting how data quality, model choice, and algorithmic assumptions influence classification outcomes. To mitigate these issues, a larger and more diverse real-world dataset could be used, reducing representational bias and improving generalisation. More flexible classification models, such as non-linear classifiers, could also better capture complex relationships between trends.\n</span>\n\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "wlCL",
+      "code_hash": "2adc0f05f81d73ec13269c7d991bd8df",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><div style=\"text-align:center; margin: 20px 0;\">\n  <img\n    src=\"https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNG15Nm1jajJyOHI2YnY2M3BzMG90bzVud2V3N2JxZHBicTB6MXAwdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xkQ18QAYX0MfDG55SL/giphy.gif\"\n    alt=\"Runway fashion visual\"\n    style=\"width:100%; max-width:420px; border-radius:12px;\"\n  >\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "kqZH",
+      "code_hash": "d6d0a47da1164184d95f1dca5b934438",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><div style=\"text-align:center; margin: 20px 0;\">\n  <img\n    src=\"https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnNidzdxdXJkNWh6ZTB6Z3RtNzYzYzh4bmgzN3BwcnV5azNhNHZuOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l2Sq3RY0XM6IRTJYI/giphy.gif\"\n    alt=\"Fashion runway visual\"\n    style=\"width:100%; max-width:420px; border-radius:12px;\"\n  >\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "wAgl",
+      "code_hash": "250c74c44de8d6dc9285007802ee0044",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><div style=\"text-align:center; margin: 20px 0;\">\n  <img\n    src=\"https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3c2pxMTJ1dnlqZm5zcTJoOGFjdTlpNzVvZWQ3MXpoZjZ3c2hsajQ5NSZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/3oEdv48EYEKlD1MpQk/giphy.gif\"\n    alt=\"Fashion visual\"\n    style=\"width:100%; max-width:420px; border-radius:12px;\"\n  >\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "rEll",
+      "code_hash": "c5caaa5b0eb689fb0bb07eea0b9c3c34",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><div style=\"text-align:center; margin: 20px 0;\">\n  <img\n    src=\"https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnc4cm43djJsZ202ZnhxMmRxMjF1MTMzYnZjeHRxbWtqeHhsc3ZrcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26tn8w5rBnrCeECOI/giphy.gif\"\n    style=\"width:100%; max-width:420px; border-radius:12px;\"\n  >\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "dGlV",
+      "code_hash": "b2bbdbd722afe52120421b98f1a4fb99",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><div style=\"text-align:center; margin: 20px 0;\">\n  <img\n    src=\"https://images.unsplash.com/photo-1765815442424-5acf90d01e41?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n    alt=\"Fashion visual\"\n    style=\"width:100%; max-width:420px; border-radius:12px;\"\n  >\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SdmI",
+      "code_hash": "4f3c88ca884293c1dcfd78103cac3455",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><div style=\"text-align:center; margin: 20px 0;\">\n  <img\n    src=\"https://images.unsplash.com/photo-1612261357585-993398d338b4?q=80&w=1036&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n    style=\"width:100%; max-width:420px; border-radius:12px;\"\n  >\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lgWD",
+      "code_hash": "e935e8042c3e8639d4c314466206e74b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><div style=\"text-align:center; margin: 20px 0;\">\n  <img\n    src=\"https://images.unsplash.com/photo-1718358345678-889a08b96114?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n    style=\"width:100%; max-width:420px; border-radius:12px;\"\n  >\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "yOPj",
+      "code_hash": "8ddc3eb56d3f82b8ca730333f8a8b27c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><div style=\"text-align:center; margin: 20px 0;\">\n  <img\n    src=\"https://images.unsplash.com/photo-1554881070-74595ca2b74c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n    alt=\"Fashion visual\"\n    style=\"width:100%; max-width:420px; border-radius:12px;\"\n  >\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "fwwy",
+      "code_hash": "7f63eaa142c25ae914243633bfa97a84",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><div style=\"text-align:center; margin: 20px 0;\">\n  <img\n    src=\"https://images.unsplash.com/photo-1650057961082-d77233053b1b?q=80&w=988&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n    style=\"width:100%; max-width:420px; border-radius:12px;\"\n  >\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "508921b893146b5f2f458cb945b7ebda",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "ebf15f1ccb3cb14e3891dfa1998d5ac1",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "b300488bdc098f104ba87f18c9b72038",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "db95e6b220b750c7c038e97dd54c99f0",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "dc02a9381b8236d9360308caf0be9254",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "07d2ca9559e37b1795c694b44c5cc2a7",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "iLit",
+      "code_hash": "fdb938d7cd258b02e32f0ddee90fe0b4",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "e49ffb06744757b125d561214449a06e",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "qnkX",
+      "code_hash": "7426044d439dc7d17e43f90604ffd162",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "TqIu",
+      "code_hash": "13388309d1005196cc9d01990c680aa2",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Vxnm",
+      "code_hash": "701e9eaf4702f4e1d19afaf827b4ec2f",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Pvdt",
+      "code_hash": "17f19ceb5691282f9e457c312b70cf55",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ZBYS",
+      "code_hash": "d95b3ece950af696ef5f09cbdd21672b",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "aLJB",
+      "code_hash": "1a5967979879c7b41000cfe71b3ba74f",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "pHFh",
+      "code_hash": "717ee7d6dac4865c7742762dbe4d76e9",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "NCOB",
+      "code_hash": "9936952ba643c4beec324f5e16e6dca4",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "aqbW",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "TRpd",
+      "code_hash": "e4092e749f9d94844c10296710b6be10",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "TXez",
+      "code_hash": "a79114e3ae2f593b767944a3d01d61e2",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "dNNg",
+      "code_hash": "b14cb8b70103242ef4b98b687bfda9ac",
+      "outputs": [],
+      "console": []
+    }
+  ]
+}

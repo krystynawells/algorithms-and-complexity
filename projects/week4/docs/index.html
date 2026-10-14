@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Week 4 — Taking Responsibility (Interactive Reading)</title>
+  <style>
+    :root {
+      --bg:#250354;
+      --card:#13022c;
+      --muted:#94a3b8;
+      --accent:#ba38c3;
+      --glass:rgba(255,255,255,0.04);
+    }
+    * {
+      box-sizing:border-box;
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;
+    }
+    body {
+      background:linear-gradient(180deg,#250354 0%,#380580 100%);
+      color:#e6eef8;
+      margin:0;
+      padding:24px;
+    }
+    .wrap {max-width:900px;margin:0 auto;}
+    header {display:flex;gap:12px;align-items:center;margin-bottom:18px;}
+    h1 {font-size:20px;margin:0;}
+    p.lead {color:var(--muted);margin:8px 0 18px;}
+    .card {
+      background:var(--card);
+      padding:18px;
+      border-radius:12px;
+      box-shadow:0 6px 18px rgba(2,6,23,0.6);
+    }
+    .controls {
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      margin-bottom:12px;
+    }
+    button {
+      background:var(--glass);
+      border:1px solid rgba(255,255,255,0.04);
+      color:#dbeafe;
+      padding:8px 12px;
+      border-radius:10px;
+      cursor:pointer;
+    }
+    button.active {
+      border-color:var(--accent);
+      box-shadow:0 6px 18px rgba(124,58,237,0.12);
+    }
+    .essay p {
+      line-height:1.6;
+      font-size:16px;
+      margin:12px 0;
+      transition:background 0.25s ease;
+    }
+    .annot {
+      display:inline-block;
+      margin-left:8px;
+      color:var(--muted);
+      cursor:pointer;
+    }
+    .note {
+      display:none;
+      margin-top:8px;
+      padding:10px;
+      border-left:3px solid var(--accent);
+      background:linear-gradient(180deg, rgba(124,58,237,0.04), transparent);
+      border-radius:6px;
+    }
+    .highlight {
+      background:rgba(124,58,237,0.10);
+      padding:0 4px;
+      border-radius:4px;
+    }
+    .sidebar {
+      margin-top:14px;
+      display:flex;
+      gap:12px;
+    }
+    .panel {
+      flex:1;
+      padding:12px;
+      border-radius:10px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+    }
+    label {
+      display:block;
+      font-size:13px;
+      color:var(--muted);
+      margin-bottom:6px;
+    }
+    textarea {
+      width:100%;
+      min-height:90px;
+      padding:8px;
+      border-radius:8px;
+      border:1px solid rgba(255,255,255,0.04);
+      background:transparent;
+      color:inherit;
+    }
+    .meta {
+      font-size:13px;
+      color:var(--muted);
+      margin-top:12px;
+    }
+    .quiz {margin-top:10px;}
+    .quiz button {display:block;margin-top:8px;}
+    footer {
+      color:var(--muted);
+      font-size:13px;
+      margin-top:14px;
+      text-align:center;
+    }
+    @media (max-width:640px){.wrap{padding:0 12px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div style="width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#4f46e5);display:flex;align-items:center;justify-content:center;font-weight:700">W4</div>
+      <div>
+        <h1>Inside Machines We Don’t Understand — Interactive Reading</h1>
+        <p class="lead">An interactive Week 4 reading based on Harari’s “Taking Responsibility”. Use the tools below to explore, reflect, and test your understanding.</p>
+      </div>
+    </header>
+
+    <div class="card">
+      <div class="controls">
+        <button id="simplify">Explain simply</button>
+        <button id="sources">Show sources</button>
+        <button id="original">Show original</button>
+      </div>
+
+      <article class="essay" id="essay">
+        <p id="p1">We live in an age of effortless connection. With a phone in hand, you can reach anyone in your circle, or even a stranger halfway across the globe. This web of communication, once unimaginable, has become an everyday part of life. Harari’s <em>“Taking Responsibility”</em> prompts a deeper question: to what level do we actually understand or even comprehend this technology today?<span class="annot" data-note="note1"></span></p>
+
+        <div id="note1" class="note">Harari frames responsibility as the duty to understand the systems that structure society — not to master every technical detail, but to recognise their social impact.</div>
+
+        <p id="p2">In <em>Taking Responsibility</em>, Harari argues that technology’s complexity has outpaced our capacity to understand it. We depend on networks, algorithms and infrastructures that operate outside of our awareness. This growing gap between use and understanding isn’t just a technical issue; it’s a social and moral one. To live responsibly in a digital world means learning to see the hidden structures that shape our choices.<span class="annot" data-note="note2"></span></p>
+
+        <div id="note2" class="note">Examples of "hidden structures" include recommendation systems, data pipelines, and opaque machine-learning models that adapt based on user data.</div>
+
+        <p id="p3">This lack of understanding has serious consequences. Harari illustrates how powerful corporations, such as Facebook, have influenced real-world events while denying responsibility for their impact. For example, he refers to how Facebook’s algorithms contributed to the spread of hate speech during the Rohingya crisis in Myanmar, where online misinformation and incitement led to real-world violence and persecution. Facebook's algorithms boosted content with little regard for the truth. Even Facebook (now Meta) has admitted that it doesn’t fully understand how its own algorithms work. <span class="highlight">Algorithms decide what we see, what we believe, and even how we feel, yet their logic remains hidden.</span> This imbalance of knowledge creates a new kind of power: those who understand and control the systems can shape reality for those who don’t. In that sense, ignorance isn’t neutral; it becomes a tool of influence.<span class="annot" data-note="note3"></span></p>
+
+        <div id="note3" class="note">UN and investigative reports tied Facebook’s role in amplifying hate speech to the Rohingya crisis — an example of how platform design can have real-world harms.</div>
+
+        <p id="p4">Harari’s call to "take responsibility" ultimately challenges us to reclaim awareness in a world built on systems we can no longer see. Understanding technology isn’t about mastering every algorithm but recognising the influence it holds over our attention, our politics, and our sense of truth. When ignorance becomes the norm, power concentrates in the hands of the few who can manipulate what the rest of us cannot comprehend. To live ethically in the digital age, we must move beyond passive use toward active understanding questioning not just what our technologies do, but what they do <em>to</em> us.<span class="annot" data-note="note4"></span></p>
+
+        <div id="note4" class="note">Taking responsibility can include demanding transparency, supporting regulation, and building public digital literacy.</div>
+      </article>
+
+      <div class="sidebar">
+        <div class="panel">
+          <label for="reflection">Quick reflection (saved in your browser)</label>
+          <textarea id="reflection" placeholder="What surprised you? What will you look into next?"></textarea>
+          <div class="meta">Your note is stored locally — try reloading the page.</div>
+        </div>
+
+        <div class="panel">
+          <label>Mini quiz</label>
+          <div class="quiz">
+            <div>Q: Which real-world event does the reading reference as an example of platform harm?</div>
+            <button id="a1">a) Cambridge Analytica scandal</button>
+            <button id="a2">b) Rohingya crisis in Myanmar</button>
+            <button id="a3">c) Arab Spring</button>
+            <div id="quiz-feedback" style="margin-top:8px;color:var(--muted)"></div>
+          </div>
+          <div style="margin-top:12px"><button id="reset-notes">Clear reflection</button></div>
+        </div>
+      </div>
+
+      <div style="margin-top:12px;display:flex;gap:10px;align-items:center;justify-content:space-between">
+        <div class="meta">Word count: <span id="wc">0</span> • Suggested length: 250–500 words</div>
+        <div>
+          <button id="export-md">Export as markdown</button>
+        </div>
+      </div>
+
+      <footer>Tip: use “Explain Simply” for a plain-English summary, “Show Sources” to view references, and “Show Original” to return to the full text.</footer>
+    </div>
+  </div>
+
+  <script>
+   
+
+    // Simplify + Sources 
+
+    const essay = document.getElementById('essay');
+    const originalHTML = essay.innerHTML;
+
+    const simplifyHTML = `
+    <h2>Explained Simpily</h2>
+     <h4>Bullet point notes explaing the key points of my essay.</h4>
+      <ul>
+        <li>Technology allows instant global connection, but most people don’t understand how it actually works.</li>
+        <li>Harari argues this gap between use and understanding has social and moral consequences.</li>
+        <li>Hidden systems, like algorithms, shape what we see, believe, and feel, giving power to those who control them.</li>
+        <li>To take responsibility means understanding the power of technology and questioning how it shapes our choices and beliefs.</li>
+      </ul>
+    `;
+
+    const sourcesHTML = `
+      <h3>Sources</h3>
+      <ul>
+        <li>UN Fact-Finding Mission on Myanmar (2018)</li>
+        <li>Reuters: "How Facebook’s Algorithm Fueled Ethnic Violence" (2018)</li>
+        <li>Wall Street Journal: "Inside Facebook’s Failures to Control Misinformation" (2021)</li>
+        <li>Yuval Noah Harari "Taking Responsibility" (excerpt from <em>21 Lessons for the 21st Century</em>)</li>
+      </ul>
+    `;
+
+    document.getElementById('simplify').addEventListener('click', ()=>{
+      essay.innerHTML = simplifyHTML;
+    });
+
+    document.getElementById('sources').addEventListener('click', ()=>{
+      essay.innerHTML = sourcesHTML;
+    });
+
+    document.getElementById('original').addEventListener('click', ()=>{
+      essay.innerHTML = originalHTML;
+    });
+
+    // Reflection 
+
+    const ref = document.getElementById('reflection');
+    ref.value = localStorage.getItem('w4-reflection') || '';
+    ref.addEventListener('input', ()=>localStorage.setItem('w4-reflection', ref.value));
+
+    document.getElementById('reset-notes').addEventListener('click', ()=>{
+      if(confirm('Clear your saved reflection?')){
+        localStorage.removeItem('w4-reflection');
+        ref.value='';
+      }
+    });
+
+    //Quiz 
+
+    document.getElementById('a1').addEventListener('click', ()=>quiz('wrong'));
+    document.getElementById('a2').addEventListener('click', ()=>quiz('right'));
+    document.getElementById('a3').addEventListener('click', ()=>quiz('wrong'));
+
+    function quiz(r){
+      const f=document.getElementById('quiz-feedback');
+      if(r==='right'){
+        f.textContent='Correct — the reading references the Rohingya crisis.';
+        f.style.color='#86efac';
+      } else {
+        f.textContent='Not quite — try again.';
+        f.style.color='#fb7185';
+      }
+    }
+
+    // Word Count + Export 
+
+    function countWords(text){return text.trim().split(/\s+/).filter(Boolean).length}
+    function updateWC(){
+      const text = Array.from(document.querySelectorAll('.essay p')).map(p=>p.textContent).join('\n');
+      document.getElementById('wc').textContent = countWords(text);
+    }
+    updateWC();
+
+    document.getElementById('export-md').addEventListener('click', ()=>{
+      const md = Array.from(document.querySelectorAll('.essay p')).map(p=>p.textContent).join('\n\n');
+      const blob = new Blob([md],{type:'text/markdown'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href=url;
+      a.download='week4_taking_responsibility.md';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    });
+  </script>
+</body>
+</html>

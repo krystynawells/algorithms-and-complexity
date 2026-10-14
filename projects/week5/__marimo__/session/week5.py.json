@@ -1,0 +1,405 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.17.6"
+  },
+  "cells": [
+    {
+      "id": "MJUe",
+      "code_hash": "fef0ff2d0280488531e9a9258f447973",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"task-1\">Task 1:</h2>\n<span class=\"paragraph\">Implement the Binary Search Algorithm for a sorted input array.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "14587b0c3e0585e98b36d9f194117deb",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"task-2\">Task 2:</h2>\n<span class=\"paragraph\">Implement the Recursive Binary Search Algorithm for a sorted input array.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "db137eab0fc6eb7df82b454c18e6b110",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"task-3\">Task 3:</h2>\n<span class=\"paragraph\">Implement Merge Sort algorithm</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "a1c93eb3896da58faab259533a391090",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"task-4\">Task 4:</h2>\n<span class=\"paragraph\">Implement Quicksort (last element as a pivot)</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "32324ac79c7ced2e8e65f9f28121a61d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"final-task\">Final Task</h2>\n<span class=\"paragraph\">Below you will find a series of cells that help you to plot a tree structure. A tree structure here is something like the following:</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "85b63861ad8478dc97557f43e967880e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Now we can use the helper functions to plot this tree structure for different iterations</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Pvdt",
+      "code_hash": "b44b8769be979731d707f17c1c8c2d57",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"tasks\">Tasks:</h3>\n<ul>\n<li>Modify the previous cell so it allows the user to input the value to search for (now it is fixed to 5)</li>\n<li>Create a new function <code>tree_merge_sort()</code>. This function is similar to <code>tree_bin_search()</code> but it created the tree for a Merge Sort algorithm (i.e. instead of only opening one branch like binary search, now it always open two branches). Use the same helper functions to plor the merge sort tree for each iteration.</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZBYS",
+      "code_hash": "5699b120c3f848973682d4f0b6d8d4fd",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h4 id=\"extra-tasks-not-compulsory-just-if-you-want-to-learn-more\">Extra Tasks (not compulsory, just if you want to learn more):</h4>\n<ul>\n<li>Add a dropdown menu that allows you to choose between Binary Search and Mergesort and then it shows the corresponding tree.</li>\n<li>Add as a third option the Quicksort algorithm with its corresponding tree</li>\n<li>Modify the helper functions so for the Binary search algorithm it displays the whole tree (not only the chosen left or right child node), and it also show the chosen path (i.e. chosen nodes) with a different colour. You might have to add an extra attribute to the nodes of the tree that accounts whether they belong to the path or not. Then, in the <code>draw_tree()</code> helper function (particularly, in the <code>nx.draw()</code> part) you can give a <code>color</code> option to nodes.</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hbol",
+      "code_hash": "42e029cf3a5d39c62d28528b3a4fc702",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "e226bb389f6335d1457bcaea8357f100",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Result: 3</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "321dc2ae9d405861811622f9f8ab1916",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Result (recursive):</strong> 3</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "439af3801d8e9dabca385d876e8273b4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Original:</strong> [1, 3, 5, 7, 9, 11]<br><strong>Sorted (Merge Sort):</strong> [1, 3, 5, 7, 9, 11]</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "710b2e672432a12f2cb5fd9598b4ae09",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Original:</strong> [1, 3, 5, 7, 9, 11]<br><strong>Sorted (Quicksort):</strong> [1, 3, 5, 7, 9, 11]</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "e111b09ba4b1e174a125eb425b03ed1f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "41339e0d6d550dc0bdf19251f7c2632d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<iframe srcdoc='&lt;!DOCTYPE html&gt;\n&lt;html lang=&quot;en&quot;&gt;\n  &lt;head&gt;\n    &lt;base href=&#x27;http://localhost:2719/mpl/4766109568/&#x27; /&gt;\n    &lt;link rel=&quot;stylesheet&quot; href=&quot;http://localhost:2719/mpl/4766109568/_static/css/page.css&quot; type=&quot;text/css&quot; /&gt;\n    &lt;link rel=&quot;stylesheet&quot; href=&quot;http://localhost:2719/mpl/4766109568/_static/css/boilerplate.css&quot; type=&quot;text/css&quot; /&gt;\n    &lt;link rel=&quot;stylesheet&quot; href=&quot;http://localhost:2719/mpl/4766109568/_static/css/fbm.css&quot; type=&quot;text/css&quot; /&gt;\n    &lt;link rel=&quot;stylesheet&quot; href=&quot;http://localhost:2719/mpl/4766109568/_static/css/mpl.css&quot; type=&quot;text/css&quot; /&gt;\n    &lt;link rel=&quot;stylesheet&quot; href=&quot;http://localhost:2719/mpl/4766109568/custom.css&quot; type=&quot;text/css&quot; /&gt;\n    &lt;script src=&quot;http://localhost:2719/mpl/4766109568/mpl.js&quot;&gt;&lt;/script&gt;\n\n    &lt;script&gt;\n      function ondownload(figure, format) {\n        window.open(&#x27;download.&#x27; + format + &#x27;?figure=&#x27; + figure.id, &#x27;_blank&#x27;);\n      };\n\n      function ready(fn) {\n        if (document.readyState != &quot;loading&quot;) {\n          fn();\n        } else {\n          document.addEventListener(&quot;DOMContentLoaded&quot;, fn);\n        }\n      }\n\n      ready(\n        function() {\n          var websocket_type = mpl.get_websocket_type();\n          var websocket = new websocket_type(&quot;ws://localhost:2719/mpl/10352/ws?figure=4766109568&quot;);\n\n          // mpl.figure creates a new figure on the webpage.\n          var fig = new mpl.figure(\n              // A unique numeric identifier for the figure\n              4766109568,\n              // A websocket object\n              websocket,\n              // A function called when a file type is selected for download\n              ondownload,\n              // The HTML element in which to place the figure\n              document.getElementById(&quot;figure&quot;));\n        }\n      );\n    &lt;/script&gt;\n\n    &lt;title&gt;marimo&lt;/title&gt;\n  &lt;/head&gt;\n\n  &lt;body&gt;\n    &lt;div id=&quot;figure&quot;&gt;&lt;/div&gt;\n  &lt;/body&gt;\n&lt;/html&gt;' width='100%' height='550px' onload='__resizeIframe(this)' frameborder='0'></iframe>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "65e760f5571aadff76cf4923fb9f45a0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-callout-output data-html='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;hr /&gt;&#92;n&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;The following code was generated initially with GPT-5 plus iterations. The code generated all the helper functions defined in the first cell. The author modified it to be displayed and plotted as a tree structure using networkx library.  &lt;/span&gt;&#92;n&lt;hr /&gt;&lt;/span&gt;&quot;' data-kind='&quot;neutral&quot;'></marimo-callout-output>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "iLit",
+      "code_hash": "a862dd623bd25409e067a8b26df94a57",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "4a149ff4ea5b8ba45deb207fadf6d5bf",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ROlb",
+      "code_hash": "3e565840d6358070b56fc0230f92099a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "qnkX",
+      "code_hash": "5c210362aff9405613cd437deb1368ba",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TqIu",
+      "code_hash": "38c14fe5ff993edf0f4da8f63ca4d6e0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Vxnm",
+      "code_hash": "933d56ac9c9c9f9d9ecdbc17a55be0af",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "1\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "DnEU",
+      "code_hash": "65c2f93703f4722691564957234eebb7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ulZA",
+      "code_hash": "74a0edcaf405bd79be09047ecfd6defb",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ecfG",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "aLJB",
+      "code_hash": "f90eecd351408432695366239eddd9f3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nHfw",
+      "code_hash": "1590ea8ac3369f8c572cbe9c8ef43b3b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "xXTn",
+      "code_hash": "4bf04f4baa6370dd1f571dd1a49e71f2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "AjVT",
+      "code_hash": "6d316ca0bcb4fa1f02095cca92de5ed4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: row;justify-content: space-between;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-ui-element object-id='AjVT-0' random-id='77aa59e9-a9e1-616e-a70e-e88096600c4b'><marimo-dropdown data-initial-value='[&quot;Binary Search&quot;]' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Choose algorithm&lt;/span&gt;&lt;/span&gt;&quot;' data-options='[&quot;Binary Search&quot;,&quot;Merge Sort&quot;,&quot;Quicksort&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false'></marimo-dropdown></marimo-ui-element><marimo-ui-element object-id='AjVT-1' random-id='9537f2aa-78d4-d443-d87a-3f2085cbdd05'><marimo-text data-initial-value='&quot;8,3,5,4,7,6,1,2&quot;' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Enter array (comma-separated)&lt;/span&gt;&lt;/span&gt;&quot;' data-placeholder='&quot;&quot;' data-kind='&quot;text&quot;' data-full-width='false' data-disabled='false' data-debounce='true'></marimo-text></marimo-ui-element><marimo-ui-element object-id='AjVT-2' random-id='881b9f58-6440-f570-f862-76093ce918d9'><marimo-number data-initial-value='5' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Value to search for (Binary Search only)&lt;/span&gt;&lt;/span&gt;&quot;' data-debounce='false' data-full-width='false' data-disabled='false'></marimo-number></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "pHFh",
+      "code_hash": "d900d9201b0196d9dd444d5c3dd35dfd",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"binary-search-tree-target3-on-1-2-3-4-5-6-7-8\">Binary Search Tree (target=3) on [1, 2, 3, 4, 5, 6, 7, 8]</h3></span><marimo-plotly data-figure='{&quot;data&quot;:[{&quot;hoverinfo&quot;:&quot;none&quot;,&quot;line&quot;:{&quot;color&quot;:&quot;black&quot;,&quot;width&quot;:1},&quot;mode&quot;:&quot;lines&quot;,&quot;x&quot;:[0.5,0.25,null,0.5,0.75,null,0.25,0.125,null,0.25,0.375,null,0.75,0.625,null,0.75,0.875,null,0.875,0.875,null],&quot;y&quot;:[0,-0.2,null,0,-0.2,null,-0.2,-0.4,null,-0.2,-0.4,null,-0.2,-0.4,null,-0.2,-0.4,null,-0.4,-0.6000000000000001,null],&quot;type&quot;:&quot;scatter&quot;},{&quot;marker&quot;:{&quot;color&quot;:[&quot;orange&quot;,&quot;orange&quot;,&quot;lightblue&quot;,&quot;tomato&quot;,&quot;lightblue&quot;,&quot;lightblue&quot;,&quot;lightblue&quot;,&quot;lightblue&quot;],&quot;line&quot;:{&quot;color&quot;:&quot;black&quot;,&quot;width&quot;:2},&quot;size&quot;:24},&quot;mode&quot;:&quot;markers+text&quot;,&quot;text&quot;:[&quot;[1, 2, 3, 4, 5, 6, 7, 8]&quot;,&quot;[1, 2, 3]&quot;,&quot;[1]&quot;,&quot;[3]&quot;,&quot;[5, 6, 7, 8]&quot;,&quot;[5]&quot;,&quot;[7, 8]&quot;,&quot;[8]&quot;],&quot;textposition&quot;:&quot;top center&quot;,&quot;x&quot;:[0.5,0.25,0.125,0.375,0.75,0.625,0.875,0.875],&quot;y&quot;:[0,-0.2,-0.4,-0.4,-0.2,-0.4,-0.4,-0.6000000000000001],&quot;type&quot;:&quot;scatter&quot;}],&quot;layout&quot;:{&quot;template&quot;:{&quot;data&quot;:{&quot;histogram2dcontour&quot;:[{&quot;type&quot;:&quot;histogram2dcontour&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;},&quot;colorscale&quot;:[[0.0,&quot;#0d0887&quot;],[0.1111111111111111,&quot;#46039f&quot;],[0.2222222222222222,&quot;#7201a8&quot;],[0.3333333333333333,&quot;#9c179e&quot;],[0.4444444444444444,&quot;#bd3786&quot;],[0.5555555555555556,&quot;#d8576b&quot;],[0.6666666666666666,&quot;#ed7953&quot;],[0.7777777777777778,&quot;#fb9f3a&quot;],[0.8888888888888888,&quot;#fdca26&quot;],[1.0,&quot;#f0f921&quot;]]}],&quot;choropleth&quot;:[{&quot;type&quot;:&quot;choropleth&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}],&quot;histogram2d&quot;:[{&quot;type&quot;:&quot;histogram2d&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;},&quot;colorscale&quot;:[[0.0,&quot;#0d0887&quot;],[0.1111111111111111,&quot;#46039f&quot;],[0.2222222222222222,&quot;#7201a8&quot;],[0.3333333333333333,&quot;#9c179e&quot;],[0.4444444444444444,&quot;#bd3786&quot;],[0.5555555555555556,&quot;#d8576b&quot;],[0.6666666666666666,&quot;#ed7953&quot;],[0.7777777777777778,&quot;#fb9f3a&quot;],[0.8888888888888888,&quot;#fdca26&quot;],[1.0,&quot;#f0f921&quot;]]}],&quot;heatmap&quot;:[{&quot;type&quot;:&quot;heatmap&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;},&quot;colorscale&quot;:[[0.0,&quot;#0d0887&quot;],[0.1111111111111111,&quot;#46039f&quot;],[0.2222222222222222,&quot;#7201a8&quot;],[0.3333333333333333,&quot;#9c179e&quot;],[0.4444444444444444,&quot;#bd3786&quot;],[0.5555555555555556,&quot;#d8576b&quot;],[0.6666666666666666,&quot;#ed7953&quot;],[0.7777777777777778,&quot;#fb9f3a&quot;],[0.8888888888888888,&quot;#fdca26&quot;],[1.0,&quot;#f0f921&quot;]]}],&quot;heatmapgl&quot;:[{&quot;type&quot;:&quot;heatmapgl&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;},&quot;colorscale&quot;:[[0.0,&quot;#0d0887&quot;],[0.1111111111111111,&quot;#46039f&quot;],[0.2222222222222222,&quot;#7201a8&quot;],[0.3333333333333333,&quot;#9c179e&quot;],[0.4444444444444444,&quot;#bd3786&quot;],[0.5555555555555556,&quot;#d8576b&quot;],[0.6666666666666666,&quot;#ed7953&quot;],[0.7777777777777778,&quot;#fb9f3a&quot;],[0.8888888888888888,&quot;#fdca26&quot;],[1.0,&quot;#f0f921&quot;]]}],&quot;contourcarpet&quot;:[{&quot;type&quot;:&quot;contourcarpet&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}],&quot;contour&quot;:[{&quot;type&quot;:&quot;contour&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;},&quot;colorscale&quot;:[[0.0,&quot;#0d0887&quot;],[0.1111111111111111,&quot;#46039f&quot;],[0.2222222222222222,&quot;#7201a8&quot;],[0.3333333333333333,&quot;#9c179e&quot;],[0.4444444444444444,&quot;#bd3786&quot;],[0.5555555555555556,&quot;#d8576b&quot;],[0.6666666666666666,&quot;#ed7953&quot;],[0.7777777777777778,&quot;#fb9f3a&quot;],[0.8888888888888888,&quot;#fdca26&quot;],[1.0,&quot;#f0f921&quot;]]}],&quot;surface&quot;:[{&quot;type&quot;:&quot;surface&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;},&quot;colorscale&quot;:[[0.0,&quot;#0d0887&quot;],[0.1111111111111111,&quot;#46039f&quot;],[0.2222222222222222,&quot;#7201a8&quot;],[0.3333333333333333,&quot;#9c179e&quot;],[0.4444444444444444,&quot;#bd3786&quot;],[0.5555555555555556,&quot;#d8576b&quot;],[0.6666666666666666,&quot;#ed7953&quot;],[0.7777777777777778,&quot;#fb9f3a&quot;],[0.8888888888888888,&quot;#fdca26&quot;],[1.0,&quot;#f0f921&quot;]]}],&quot;mesh3d&quot;:[{&quot;type&quot;:&quot;mesh3d&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}],&quot;scatter&quot;:[{&quot;fillpattern&quot;:{&quot;fillmode&quot;:&quot;overlay&quot;,&quot;size&quot;:10,&quot;solidity&quot;:0.2},&quot;type&quot;:&quot;scatter&quot;}],&quot;parcoords&quot;:[{&quot;type&quot;:&quot;parcoords&quot;,&quot;line&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;scatterpolargl&quot;:[{&quot;type&quot;:&quot;scatterpolargl&quot;,&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;bar&quot;:[{&quot;error_x&quot;:{&quot;color&quot;:&quot;#2a3f5f&quot;},&quot;error_y&quot;:{&quot;color&quot;:&quot;#2a3f5f&quot;},&quot;marker&quot;:{&quot;line&quot;:{&quot;color&quot;:&quot;#E5ECF6&quot;,&quot;width&quot;:0.5},&quot;pattern&quot;:{&quot;fillmode&quot;:&quot;overlay&quot;,&quot;size&quot;:10,&quot;solidity&quot;:0.2}},&quot;type&quot;:&quot;bar&quot;}],&quot;scattergeo&quot;:[{&quot;type&quot;:&quot;scattergeo&quot;,&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;scatterpolar&quot;:[{&quot;type&quot;:&quot;scatterpolar&quot;,&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;histogram&quot;:[{&quot;marker&quot;:{&quot;pattern&quot;:{&quot;fillmode&quot;:&quot;overlay&quot;,&quot;size&quot;:10,&quot;solidity&quot;:0.2}},&quot;type&quot;:&quot;histogram&quot;}],&quot;scattergl&quot;:[{&quot;type&quot;:&quot;scattergl&quot;,&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;scatter3d&quot;:[{&quot;type&quot;:&quot;scatter3d&quot;,&quot;line&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}},&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;scattermapbox&quot;:[{&quot;type&quot;:&quot;scattermapbox&quot;,&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;scatterternary&quot;:[{&quot;type&quot;:&quot;scatterternary&quot;,&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;scattercarpet&quot;:[{&quot;type&quot;:&quot;scattercarpet&quot;,&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;carpet&quot;:[{&quot;aaxis&quot;:{&quot;endlinecolor&quot;:&quot;#2a3f5f&quot;,&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;minorgridcolor&quot;:&quot;white&quot;,&quot;startlinecolor&quot;:&quot;#2a3f5f&quot;},&quot;baxis&quot;:{&quot;endlinecolor&quot;:&quot;#2a3f5f&quot;,&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;minorgridcolor&quot;:&quot;white&quot;,&quot;startlinecolor&quot;:&quot;#2a3f5f&quot;},&quot;type&quot;:&quot;carpet&quot;}],&quot;table&quot;:[{&quot;cells&quot;:{&quot;fill&quot;:{&quot;color&quot;:&quot;#EBF0F8&quot;},&quot;line&quot;:{&quot;color&quot;:&quot;white&quot;}},&quot;header&quot;:{&quot;fill&quot;:{&quot;color&quot;:&quot;#C8D4E3&quot;},&quot;line&quot;:{&quot;color&quot;:&quot;white&quot;}},&quot;type&quot;:&quot;table&quot;}],&quot;barpolar&quot;:[{&quot;marker&quot;:{&quot;line&quot;:{&quot;color&quot;:&quot;#E5ECF6&quot;,&quot;width&quot;:0.5},&quot;pattern&quot;:{&quot;fillmode&quot;:&quot;overlay&quot;,&quot;size&quot;:10,&quot;solidity&quot;:0.2}},&quot;type&quot;:&quot;barpolar&quot;}],&quot;pie&quot;:[{&quot;automargin&quot;:true,&quot;type&quot;:&quot;pie&quot;}]},&quot;layout&quot;:{&quot;autotypenumbers&quot;:&quot;strict&quot;,&quot;colorway&quot;:[&quot;#636efa&quot;,&quot;#EF553B&quot;,&quot;#00cc96&quot;,&quot;#ab63fa&quot;,&quot;#FFA15A&quot;,&quot;#19d3f3&quot;,&quot;#FF6692&quot;,&quot;#B6E880&quot;,&quot;#FF97FF&quot;,&quot;#FECB52&quot;],&quot;font&quot;:{&quot;color&quot;:&quot;#2a3f5f&quot;},&quot;hovermode&quot;:&quot;closest&quot;,&quot;hoverlabel&quot;:{&quot;align&quot;:&quot;left&quot;},&quot;paper_bgcolor&quot;:&quot;white&quot;,&quot;plot_bgcolor&quot;:&quot;#E5ECF6&quot;,&quot;polar&quot;:{&quot;bgcolor&quot;:&quot;#E5ECF6&quot;,&quot;angularaxis&quot;:{&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;ticks&quot;:&quot;&quot;},&quot;radialaxis&quot;:{&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;ticks&quot;:&quot;&quot;}},&quot;ternary&quot;:{&quot;bgcolor&quot;:&quot;#E5ECF6&quot;,&quot;aaxis&quot;:{&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;ticks&quot;:&quot;&quot;},&quot;baxis&quot;:{&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;ticks&quot;:&quot;&quot;},&quot;caxis&quot;:{&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;ticks&quot;:&quot;&quot;}},&quot;coloraxis&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}},&quot;colorscale&quot;:{&quot;sequential&quot;:[[0.0,&quot;#0d0887&quot;],[0.1111111111111111,&quot;#46039f&quot;],[0.2222222222222222,&quot;#7201a8&quot;],[0.3333333333333333,&quot;#9c179e&quot;],[0.4444444444444444,&quot;#bd3786&quot;],[0.5555555555555556,&quot;#d8576b&quot;],[0.6666666666666666,&quot;#ed7953&quot;],[0.7777777777777778,&quot;#fb9f3a&quot;],[0.8888888888888888,&quot;#fdca26&quot;],[1.0,&quot;#f0f921&quot;]],&quot;sequentialminus&quot;:[[0.0,&quot;#0d0887&quot;],[0.1111111111111111,&quot;#46039f&quot;],[0.2222222222222222,&quot;#7201a8&quot;],[0.3333333333333333,&quot;#9c179e&quot;],[0.4444444444444444,&quot;#bd3786&quot;],[0.5555555555555556,&quot;#d8576b&quot;],[0.6666666666666666,&quot;#ed7953&quot;],[0.7777777777777778,&quot;#fb9f3a&quot;],[0.8888888888888888,&quot;#fdca26&quot;],[1.0,&quot;#f0f921&quot;]],&quot;diverging&quot;:[[0,&quot;#8e0152&quot;],[0.1,&quot;#c51b7d&quot;],[0.2,&quot;#de77ae&quot;],[0.3,&quot;#f1b6da&quot;],[0.4,&quot;#fde0ef&quot;],[0.5,&quot;#f7f7f7&quot;],[0.6,&quot;#e6f5d0&quot;],[0.7,&quot;#b8e186&quot;],[0.8,&quot;#7fbc41&quot;],[0.9,&quot;#4d9221&quot;],[1,&quot;#276419&quot;]]},&quot;xaxis&quot;:{&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;ticks&quot;:&quot;&quot;,&quot;title&quot;:{&quot;standoff&quot;:15},&quot;zerolinecolor&quot;:&quot;white&quot;,&quot;automargin&quot;:true,&quot;zerolinewidth&quot;:2},&quot;yaxis&quot;:{&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;ticks&quot;:&quot;&quot;,&quot;title&quot;:{&quot;standoff&quot;:15},&quot;zerolinecolor&quot;:&quot;white&quot;,&quot;automargin&quot;:true,&quot;zerolinewidth&quot;:2},&quot;scene&quot;:{&quot;xaxis&quot;:{&quot;backgroundcolor&quot;:&quot;#E5ECF6&quot;,&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;showbackground&quot;:true,&quot;ticks&quot;:&quot;&quot;,&quot;zerolinecolor&quot;:&quot;white&quot;,&quot;gridwidth&quot;:2},&quot;yaxis&quot;:{&quot;backgroundcolor&quot;:&quot;#E5ECF6&quot;,&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;showbackground&quot;:true,&quot;ticks&quot;:&quot;&quot;,&quot;zerolinecolor&quot;:&quot;white&quot;,&quot;gridwidth&quot;:2},&quot;zaxis&quot;:{&quot;backgroundcolor&quot;:&quot;#E5ECF6&quot;,&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;showbackground&quot;:true,&quot;ticks&quot;:&quot;&quot;,&quot;zerolinecolor&quot;:&quot;white&quot;,&quot;gridwidth&quot;:2}},&quot;shapedefaults&quot;:{&quot;line&quot;:{&quot;color&quot;:&quot;#2a3f5f&quot;}},&quot;annotationdefaults&quot;:{&quot;arrowcolor&quot;:&quot;#2a3f5f&quot;,&quot;arrowhead&quot;:0,&quot;arrowwidth&quot;:1},&quot;geo&quot;:{&quot;bgcolor&quot;:&quot;white&quot;,&quot;landcolor&quot;:&quot;#E5ECF6&quot;,&quot;subunitcolor&quot;:&quot;white&quot;,&quot;showland&quot;:true,&quot;showlakes&quot;:true,&quot;lakecolor&quot;:&quot;white&quot;},&quot;title&quot;:{&quot;x&quot;:0.05},&quot;mapbox&quot;:{&quot;style&quot;:&quot;light&quot;}}},&quot;margin&quot;:{&quot;l&quot;:20,&quot;r&quot;:20,&quot;t&quot;:40,&quot;b&quot;:20},&quot;showlegend&quot;:false,&quot;dragmode&quot;:&quot;zoom&quot;}}' data-config='{}'></marimo-plotly></div>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}

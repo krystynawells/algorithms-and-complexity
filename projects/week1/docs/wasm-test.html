@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./favicon.ico" />
+    <!-- Preload is necessary because we show these images when we disconnect from the server,
+    but at that point we cannot load these images from the server -->
+    <link rel="preload" href="./assets/gradient-yHQUC_QB.png" as="image" />
+    <link rel="preload" href="./assets/noise-60BoTA8O.png" as="image" />
+    <!-- Preload the fonts -->
+    <link rel="preload" href="./assets/Lora-VariableFont_wght-B2ootaw-.ttf" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="./assets/PTSans-Regular-CxL0S8W7.ttf" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="./assets/PTSans-Bold-D9fedIX3.ttf" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="./assets/FiraMono-Regular-BTCkDNvf.ttf" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="./assets/FiraMono-Medium-DU3aDxX5.ttf" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="./assets/FiraMono-Bold-CLVRCuM9.ttf" as="font" crossorigin="anonymous" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="a marimo app" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.json" />
+
+    <script data-marimo="true">
+      function __resizeIframe(obj) {
+        var scrollbarHeight = 20; // Max between windows, mac, and linux
+
+        function setHeight() {
+          // Guard against race condition where iframe isn't ready
+          if (!obj.contentWindow?.document?.documentElement) {
+            return;
+          }
+          var element = obj.contentWindow.document.documentElement;
+          // If there is no vertical scrollbar, we don't need to resize the iframe
+          if (element.scrollHeight === element.clientHeight) {
+            return;
+          }
+
+          // Create a new height that includes the scrollbar height if it's visible
+          var hasHorizontalScrollbar = element.scrollWidth > element.clientWidth;
+          var newHeight = element.scrollHeight + (hasHorizontalScrollbar ? scrollbarHeight : 0);
+
+          // Only update the height if it's different from the current height
+          if (obj.style.height !== `${newHeight}px`) {
+            obj.style.height = `${newHeight}px`;
+          }
+        }
+
+        // Resize the iframe to the height of the content and bottom scrollbar height
+        setHeight();
+
+        // Resize the iframe when the content changes
+        const resizeObserver = new ResizeObserver((entries) => {
+          setHeight();
+        });
+        // Only observe if iframe content is ready
+        if (obj.contentWindow?.document?.body) {
+          resizeObserver.observe(obj.contentWindow.document.body);
+        }
+      }
+    </script>
+    <marimo-filename hidden>notebook.py</marimo-filename>
+    <!-- TODO(Trevor): Legacy, required by VS Code plugin. Remove when plugin is updated (see marimo/server/_templates/template.py) -->
+    <marimo-version data-version="{{ version }}" hidden></marimo-version>
+    <marimo-user-config data-config="{{ user_config }}" hidden></marimo-user-config>
+    <marimo-server-token data-token="{{ server_token }}" hidden></marimo-server-token>
+    <!-- /TODO -->
+    <title>Marimo-intro</title>
+    <script type="module" crossorigin src="./assets/index-29P5xX8u.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/preload-helper-DImqtvgl.js">
+    <link rel="modulepreload" crossorigin href="./assets/chunk-DZLz74EQ.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-BcIddLXZ.js">
+    <link rel="modulepreload" crossorigin href="./assets/jsx-runtime-DvsdsEjx.js">
+    <link rel="modulepreload" crossorigin href="./assets/useEventListener-g9rPKvBX.js">
+    <link rel="modulepreload" crossorigin href="./assets/dist-CLazWf1X.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-dom-D6bRRS5R.js">
+    <link rel="modulepreload" crossorigin href="./assets/namespace-CnoeT75h.js">
+    <link rel="modulepreload" crossorigin href="./assets/tslib.es6-dlz5WbC8.js">
+    <link rel="modulepreload" crossorigin href="./assets/fullscreen-DTPr3iBY.js">
+    <link rel="modulepreload" crossorigin href="./assets/cn-Dr9kMPPj.js">
+    <link rel="modulepreload" crossorigin href="./assets/dist-D-dnh2ed.js">
+    <link rel="modulepreload" crossorigin href="./assets/menu-items-Bo6Dyd_Q.js">
+    <link rel="modulepreload" crossorigin href="./assets/createLucideIcon-QLW8E4z5.js">
+    <link rel="modulepreload" crossorigin href="./assets/check-C5PVLNkJ.js">
+    <link rel="modulepreload" crossorigin href="./assets/chevron-right-BDEhimQq.js">
+    <link rel="modulepreload" crossorigin href="./assets/dropdown-menu-CJDB1PNI.js">
+    <link rel="modulepreload" crossorigin href="./assets/events-BGfCi1Xy.js">
+    <link rel="modulepreload" crossorigin href="./assets/select-DKRTzlUU.js">
+    <link rel="modulepreload" crossorigin href="./assets/tooltip-ULHbIsj9.js">
+    <link rel="modulepreload" crossorigin href="./assets/Logger-BkkOJyg0.js">
+    <link rel="modulepreload" crossorigin href="./assets/hotkeys-CBY41Jr2.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-7g8sREeT.js">
+    <link rel="modulepreload" crossorigin href="./assets/_Uint8Array-CPNtPV0k.js">
+    <link rel="modulepreload" crossorigin href="./assets/_getTag-C4fv2peH.js">
+    <link rel="modulepreload" crossorigin href="./assets/_baseIsEqual-Cdnsi4t8.js">
+    <link rel="modulepreload" crossorigin href="./assets/invariant-91cSKJcr.js">
+    <link rel="modulepreload" crossorigin href="./assets/isArrayLikeObject-CQy5-FN4.js">
+    <link rel="modulepreload" crossorigin href="./assets/merge-DrdmtLTL.js">
+    <link rel="modulepreload" crossorigin href="./assets/zod-BEi78Y5d.js">
+    <link rel="modulepreload" crossorigin href="./assets/utils-DBmmAf_K.js">
+    <link rel="modulepreload" crossorigin href="./assets/Deferred-Mppm0cvJ.js">
+    <link rel="modulepreload" crossorigin href="./assets/uuid-4lb_EYpq.js">
+    <link rel="modulepreload" crossorigin href="./assets/key-D4QiH_7H.js">
+    <link rel="modulepreload" crossorigin href="./assets/once-8ZDiGGtA.js">
+    <link rel="modulepreload" crossorigin href="./assets/toDate-Daj1hQSF.js">
+    <link rel="modulepreload" crossorigin href="./assets/_baseSlice-B27Cqkm6.js">
+    <link rel="modulepreload" crossorigin href="./assets/_arrayMap-DQI2GUNb.js">
+    <link rel="modulepreload" crossorigin href="./assets/isSymbol-D1Vf4s0g.js">
+    <link rel="modulepreload" crossorigin href="./assets/toString-pPvo2488.js">
+    <link rel="modulepreload" crossorigin href="./assets/_hasUnicode-CPHpt5EV.js">
+    <link rel="modulepreload" crossorigin href="./assets/upperFirst-CVedXayx.js">
+    <link rel="modulepreload" crossorigin href="./assets/capitalize-DcZ4F_0s.js">
+    <link rel="modulepreload" crossorigin href="./assets/ai-model-dropdown-DSUVFIso.js">
+    <link rel="modulepreload" crossorigin href="./assets/documentation-B7z6bB-t.js">
+    <link rel="modulepreload" crossorigin href="./assets/badge-DJuT6BaT.js">
+    <link rel="modulepreload" crossorigin href="./assets/button-Bxk0BtBn.js">
+    <link rel="modulepreload" crossorigin href="./assets/use-toast-D6NNsC80.js">
+    <link rel="modulepreload" crossorigin href="./assets/constants-Cv7-oioA.js">
+    <link rel="modulepreload" crossorigin href="./assets/config-DXGmIv9f.js">
+    <link rel="modulepreload" crossorigin href="./assets/connection-D2GvycR9.js">
+    <link rel="modulepreload" crossorigin href="./assets/useLifecycle-BfeAlD80.js">
+    <link rel="modulepreload" crossorigin href="./assets/useNonce-BbWkd3B4.js">
+    <link rel="modulepreload" crossorigin href="./assets/useTheme-oPMxEKRc.js">
+    <link rel="modulepreload" crossorigin href="./assets/createReducer-CFr1RdS2.js">
+    <link rel="modulepreload" crossorigin href="./assets/dist-CoL9j4yJ.js">
+    <link rel="modulepreload" crossorigin href="./assets/dist-Bz53xjA5.js">
+    <link rel="modulepreload" crossorigin href="./assets/dist-Cs8TISgf.js">
+    <link rel="modulepreload" crossorigin href="./assets/dist-Dlusp3mb.js">
+    <link rel="modulepreload" crossorigin href="./assets/dist-DzUKODTF.js">
+    <link rel="modulepreload" crossorigin href="./assets/dist-CjoeBoZ9.js">
+    <link rel="modulepreload" crossorigin href="./assets/dist-CyqTsfyg.js">
+    <link rel="modulepreload" crossorigin href="./assets/dist-Dm8m1boP.js">
+    <link rel="modulepreload" crossorigin href="./assets/dist-DvDyxv8b.js">
+    <link rel="modulepreload" crossorigin href="./assets/stex-BrOrfhKB.js">
+    <link rel="modulepreload" crossorigin href="./assets/_baseProperty-CIKnF2iY.js">
+    <link rel="modulepreload" crossorigin href="./assets/toNumber-Bjr00yqN.js">
+    <link rel="modulepreload" crossorigin href="./assets/now-CKgsywea.js">
+    <link rel="modulepreload" crossorigin href="./assets/debounce-Bzqd6azt.js">
+    <link rel="modulepreload" crossorigin href="./assets/toInteger-Qi6pclEF.js">
+    <link rel="modulepreload" crossorigin href="./assets/type-kF6pOJbH.js">
+    <link rel="modulepreload" crossorigin href="./assets/marked.esm-C_54K2ke.js">
+    <link rel="modulepreload" crossorigin href="./assets/main-CfqcqCNp.js">
+    <link rel="modulepreload" crossorigin href="./assets/cells-Dd1FatlG.js">
+    <link rel="modulepreload" crossorigin href="./assets/kbd-BQFiWIjd.js">
+    <link rel="modulepreload" crossorigin href="./assets/renderShortcut-C9_NT6sD.js">
+    <link rel="modulepreload" crossorigin href="./assets/useEvent-BOb1a9d1.js">
+    <link rel="modulepreload" crossorigin href="./assets/useDeleteCell-CJaipocw.js">
+    <link rel="modulepreload" crossorigin href="./assets/icons-CLD-J5J3.js">
+    <link rel="modulepreload" crossorigin href="./assets/spinner-BhnfQOEl.js">
+    <link rel="modulepreload" crossorigin href="./assets/add-missing-import-CfRgNApn.js">
+    <link rel="modulepreload" crossorigin href="./assets/ansi_up-D_b0GS7N.js">
+    <link rel="modulepreload" crossorigin href="./assets/blob-CTPcPiam.js">
+    <link rel="modulepreload" crossorigin href="./assets/dom-CT3dAMQW.js">
+    <link rel="modulepreload" crossorigin href="./assets/errors-_3XAtRr3.js">
+    <link rel="modulepreload" crossorigin href="./assets/extends-Bwhapo2B.js">
+    <link rel="modulepreload" crossorigin href="./assets/objectWithoutPropertiesLoose-CDpgRi8_.js">
+    <link rel="modulepreload" crossorigin href="./assets/esm-7XxuulnL.js">
+    <link rel="modulepreload" crossorigin href="./assets/es-BVCqnQhJ.js">
+    <link rel="modulepreload" crossorigin href="./assets/shim-CWt9rDBn.js">
+    <link rel="modulepreload" crossorigin href="./assets/add-cell-with-ai-CxM_YKzf.js">
+    <link rel="modulepreload" crossorigin href="./assets/ErrorBoundary-CeiDOU5x.js">
+    <link rel="modulepreload" crossorigin href="./assets/alert-dialog-BO8sf-73.js">
+    <link rel="modulepreload" crossorigin href="./assets/dialog-CR68_CUl.js">
+    <link rel="modulepreload" crossorigin href="./assets/useDebounce-_ztZiL0I.js">
+    <link rel="modulepreload" crossorigin href="./assets/useNumberFormatter-D21brJ0f.js">
+    <link rel="modulepreload" crossorigin href="./assets/input-C1RzjWSK.js">
+    <link rel="modulepreload" crossorigin href="./assets/ImperativeModal-BG5LTpV0.js">
+    <link rel="modulepreload" crossorigin href="./assets/filename-B5Yo1bOu.js">
+    <link rel="modulepreload" crossorigin href="./assets/cell-link-_kF38gGF.js">
+    <link rel="modulepreload" crossorigin href="./assets/accordion-A41ffd5P.js">
+    <link rel="modulepreload" crossorigin href="./assets/alert-hjKHAeOD.js">
+    <link rel="modulepreload" crossorigin href="./assets/links-CkROMZxn.js">
+    <link rel="modulepreload" crossorigin href="./assets/state-jvUYiWCG.js">
+    <link rel="modulepreload" crossorigin href="./assets/wrench-B2m2X1sb.js">
+    <link rel="modulepreload" crossorigin href="./assets/MarimoErrorOutput-Lft73Wnl.js">
+    <link rel="modulepreload" crossorigin href="./assets/copy-CkZsxeON.js">
+    <link rel="modulepreload" crossorigin href="./assets/copy-6mpL4BeI.js">
+    <link rel="modulepreload" crossorigin href="./assets/copy-icon-6ICckC-p.js">
+    <link rel="modulepreload" crossorigin href="./assets/RenderHTML-BoDLdBq-.js">
+    <link rel="modulepreload" crossorigin href="./assets/emotion-is-prop-valid.esm-BbphD4LX.js">
+    <link rel="modulepreload" crossorigin href="./assets/with-selector-BmLsipPw.js">
+    <link rel="modulepreload" crossorigin href="./assets/JsonOutput-BID8Oos7.js">
+    <link rel="modulepreload" crossorigin href="./assets/_arrayReduce-DDpPg0Qh.js">
+    <link rel="modulepreload" crossorigin href="./assets/startCase-D58-CT5H.js">
+    <link rel="modulepreload" crossorigin href="./assets/strings-DYBy5ejj.js">
+    <link rel="modulepreload" crossorigin href="./assets/command-BZVf1cJP.js">
+    <link rel="modulepreload" crossorigin href="./assets/popover-DW0D4l0O.js">
+    <link rel="modulepreload" crossorigin href="./assets/table-CE-j9Qo6.js">
+    <link rel="modulepreload" crossorigin href="./assets/tabs-8ThyQfYh.js">
+    <link rel="modulepreload" crossorigin href="./assets/useAsyncData-D9GA9BWg.js">
+    <link rel="modulepreload" crossorigin href="./assets/LazyAnyLanguageCodeMirror-RkzkO2YV.js">
+    <link rel="modulepreload" crossorigin href="./assets/error-banner-BGjnZePp.js">
+    <link rel="modulepreload" crossorigin href="./assets/defaultLocale-DPsgYaXf.js">
+    <link rel="modulepreload" crossorigin href="./assets/precisionRound-TxjBk8nN.js">
+    <link rel="modulepreload" crossorigin href="./assets/defaultLocale-C6TNIE_k.js">
+    <link rel="modulepreload" crossorigin href="./assets/vega-loader.browser.module-BkWiTok0.js">
+    <link rel="modulepreload" crossorigin href="./assets/loader-CgbiPC_T.js">
+    <link rel="modulepreload" crossorigin href="./assets/formats-CWdWXhfT.js">
+    <link rel="modulepreload" crossorigin href="./assets/en-US-CjWuOpsV.js">
+    <link rel="modulepreload" crossorigin href="./assets/isValid-o3nZVu8e.js">
+    <link rel="modulepreload" crossorigin href="./assets/dates-Au76svwW.js">
+    <link rel="modulepreload" crossorigin href="./assets/download-B4_BX7gi.js">
+    <link rel="modulepreload" crossorigin href="./assets/maps-DaQbs_UR.js">
+    <link rel="modulepreload" crossorigin href="./assets/useDateFormatter-DrFLqO1D.js">
+    <link rel="modulepreload" crossorigin href="./assets/range-Dsq9WHSI.js">
+    <link rel="modulepreload" crossorigin href="./assets/list-filter-CRC72QPW.js">
+    <link rel="modulepreload" crossorigin href="./assets/columns-qXe5bccO.js">
+    <link rel="modulepreload" crossorigin href="./assets/focus-Bnk25hTp.js">
+    <link rel="modulepreload" crossorigin href="./assets/useInstallPackage-DoKAq17E.js">
+    <link rel="modulepreload" crossorigin href="./assets/column-preview-2H8pwalb.js">
+    <link rel="modulepreload" crossorigin href="./assets/useAddCell-Dq3HqYz1.js">
+    <link rel="modulepreload" crossorigin href="./assets/toggle-BpFqu8FB.js">
+    <link rel="modulepreload" crossorigin href="./assets/useHotkey-DkiyGPLs.js">
+    <link rel="modulepreload" crossorigin href="./assets/globals-BFoVgbHf.js">
+    <link rel="modulepreload" crossorigin href="./assets/mode-DQPKc-Hp.js">
+    <link rel="modulepreload" crossorigin href="./assets/share-Dcl7D_tA.js">
+    <link rel="modulepreload" crossorigin href="./assets/dist-DcASoeRZ.js">
+    <link rel="modulepreload" crossorigin href="./assets/memoize-D2QB0zzX.js">
+    <link rel="modulepreload" crossorigin href="./assets/_toKey-BvVjBIlz.js">
+    <link rel="modulepreload" crossorigin href="./assets/_baseSet-B-t_O9-N.js">
+    <link rel="modulepreload" crossorigin href="./assets/utilities.esm-DcV_e-D3.js">
+    <link rel="modulepreload" crossorigin href="./assets/floating-outline-DZnSnZfg.js">
+    <link rel="modulepreload" crossorigin href="./assets/eye-off-9UMe_Y7D.js">
+    <link rel="modulepreload" crossorigin href="./assets/plus-d2HNOuZI.js">
+    <link rel="modulepreload" crossorigin href="./assets/readonly-python-code-Cb7Ak_Dy.js">
+    <link rel="modulepreload" crossorigin href="./assets/file-video-camera-CfnyBQQe.js">
+    <link rel="modulepreload" crossorigin href="./assets/file-text-Lr1kJd4E.js">
+    <link rel="modulepreload" crossorigin href="./assets/file-BENStGHx.js">
+    <link rel="modulepreload" crossorigin href="./assets/types-DyTIgBnH.js">
+    <link rel="modulepreload" crossorigin href="./assets/label-BEUjZsdo.js">
+    <link rel="modulepreload" crossorigin href="./assets/form-BGZvwlog.js">
+    <link rel="modulepreload" crossorigin href="./assets/textarea-B-_OthMe.js">
+    <link rel="modulepreload" crossorigin href="./assets/circle-x-BsVcxKkV.js">
+    <link rel="modulepreload" crossorigin href="./assets/refresh-ccw-CCJeTTJO.js">
+    <link rel="modulepreload" crossorigin href="./assets/trash-2-3UJSaMKF.js">
+    <link rel="modulepreload" crossorigin href="./assets/form-DyKYT1WR.js">
+    <link rel="modulepreload" crossorigin href="./assets/field-D6g5A_wf.js">
+    <link rel="modulepreload" crossorigin href="./assets/switch-B5bMMWJn.js">
+    <link rel="modulepreload" crossorigin href="./assets/useBoolean-CSR3XjhE.js">
+    <link rel="modulepreload" crossorigin href="./assets/useDeepCompareMemoize-BsZY8i2r.js">
+    <link rel="modulepreload" crossorigin href="./assets/types-DQDL7dro.js">
+    <link rel="modulepreload" crossorigin href="./assets/prop-types-CHKlDUlJ.js">
+    <link rel="modulepreload" crossorigin href="./assets/es-C-CWIA-E.js">
+    <link rel="modulepreload" crossorigin href="./assets/VisuallyHidden-BiHw-PIc.js">
+    <link rel="modulepreload" crossorigin href="./assets/_baseFlatten-BM8p5vhd.js">
+    <link rel="modulepreload" crossorigin href="./assets/get-Bi1nZ6vb.js">
+    <link rel="modulepreload" crossorigin href="./assets/hasIn-BZo8Xaqq.js">
+    <link rel="modulepreload" crossorigin href="./assets/_basePickBy-CViVNfOD.js">
+    <link rel="modulepreload" crossorigin href="./assets/pick-CHglt4eJ.js">
+    <link rel="modulepreload" crossorigin href="./assets/square-DKPXnMmD.js">
+    <link rel="modulepreload" crossorigin href="./assets/chart-no-axes-column-DmR44Tbq.js">
+    <link rel="modulepreload" crossorigin href="./assets/download-BB5Iexmn.js">
+    <link rel="modulepreload" crossorigin href="./assets/globe-CPrVx8HM.js">
+    <link rel="modulepreload" crossorigin href="./assets/send-DRRBOpzT.js">
+    <link rel="modulepreload" crossorigin href="./assets/refresh-cw-B_tmnHav.js">
+    <link rel="modulepreload" crossorigin href="./assets/settings-6ySBJQ7Y.js">
+    <link rel="modulepreload" crossorigin href="./assets/square-function-DBJINsmk.js">
+    <link rel="modulepreload" crossorigin href="./assets/bundle.esm-CSE5zS7V.js">
+    <link rel="stylesheet" crossorigin href="./assets/documentation-BvrC6Bsv.css">
+    <link rel="stylesheet" crossorigin href="./assets/columns-j3zW187k.css">
+    <link rel="stylesheet" crossorigin href="./assets/index-Optxbl37.css">
+  <marimo-wasm hidden=""></marimo-wasm>
+    <script>
+        if (window.location.protocol === 'file:') {
+            alert('Warning: This file must be served by an HTTP server to function correctly.');
+        }
+    </script>
+    
+    <style>
+        #save-button {
+            display: none !important;
+        }
+        #filename-input {
+            display: none !important;
+        }
+    </style>
+    <style title='marimo-custom'>body.light-theme,
+body.dark.dark-theme {
+  background-color: black !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* Optional: style headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin: 0.5em 0;
+}
+
+</style><marimo-code hidden="">import%20marimo%0A%0A__generated_with%20%3D%20%220.16.5%22%0Aapp%20%3D%20marimo.App(%0A%20%20%20%20layout_file%3D%22data%3Aapplication%2Fjson%3Bbase64%2CewogICJ0eXBlIjogImdyaWQiLAogICJkYXRhIjogewogICAgImNvbHVtbnMiOiAyNCwKICAgICJyb3dIZWlnaHQiOiAyMCwKICAgICJtYXhXaWR0aCI6IDYwMCwKICAgICJib3JkZXJlZCI6IHRydWUsCiAgICAiY2VsbHMiOiBbCiAgICAgIHsKICAgICAgICAicG9zaXRpb24iOiBudWxsCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAicG9zaXRpb24iOiBbCiAgICAgICAgICAyLAogICAgICAgICAgMSwKICAgICAgICAgIDEzLAogICAgICAgICAgNAogICAgICAgIF0KICAgICAgfSwKICAgICAgewogICAgICAgICJwb3NpdGlvbiI6IG51bGwKICAgICAgfSwKICAgICAgewogICAgICAgICJwb3NpdGlvbiI6IG51bGwKICAgICAgfSwKICAgICAgewogICAgICAgICJwb3NpdGlvbiI6IG51bGwKICAgICAgfSwKICAgICAgewogICAgICAgICJwb3NpdGlvbiI6IFsKICAgICAgICAgIDIsCiAgICAgICAgICA1LAogICAgICAgICAgMTMsCiAgICAgICAgICAxCiAgICAgICAgXQogICAgICB9LAogICAgICB7CiAgICAgICAgInBvc2l0aW9uIjogbnVsbAogICAgICB9LAogICAgICB7CiAgICAgICAgInBvc2l0aW9uIjogbnVsbAogICAgICB9LAogICAgICB7CiAgICAgICAgInBvc2l0aW9uIjogbnVsbAogICAgICB9LAogICAgICB7CiAgICAgICAgInBvc2l0aW9uIjogWwogICAgICAgICAgMiwKICAgICAgICAgIDYsCiAgICAgICAgICAxMywKICAgICAgICAgIDUKICAgICAgICBdCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAicG9zaXRpb24iOiBbCiAgICAgICAgICAyLAogICAgICAgICAgMTEsCiAgICAgICAgICA5LAogICAgICAgICAgMgogICAgICAgIF0KICAgICAgfSwKICAgICAgewogICAgICAgICJwb3NpdGlvbiI6IFsKICAgICAgICAgIDExLAogICAgICAgICAgMTEsCiAgICAgICAgICAxMSwKICAgICAgICAgIDIKICAgICAgICBdCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAicG9zaXRpb24iOiBbCiAgICAgICAgICAyLAogICAgICAgICAgMTMsCiAgICAgICAgICAyMSwKICAgICAgICAgIDUKICAgICAgICBdCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAicG9zaXRpb24iOiBudWxsCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAicG9zaXRpb24iOiBbCiAgICAgICAgICAyLAogICAgICAgICAgMTgsCiAgICAgICAgICAxOSwKICAgICAgICAgIDMKICAgICAgICBdLAogICAgICAgICJzaWRlIjogImxlZnQiCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAicG9zaXRpb24iOiBbCiAgICAgICAgICAyLAogICAgICAgICAgMjEsCiAgICAgICAgICAxOSwKICAgICAgICAgIDgKICAgICAgICBdCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAicG9zaXRpb24iOiBbCiAgICAgICAgICAyLAogICAgICAgICAgMjksCiAgICAgICAgICAxOSwKICAgICAgICAgIDUKICAgICAgICBdCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAicG9zaXRpb24iOiBbCiAgICAgICAgICAyLAogICAgICAgICAgMzQsCiAgICAgICAgICAyMiwKICAgICAgICAgIDMKICAgICAgICBdCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAicG9zaXRpb24iOiBudWxsCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAicG9zaXRpb24iOiBbCiAgICAgICAgICAyLAogICAgICAgICAgMzcsCiAgICAgICAgICAyMiwKICAgICAgICAgIDE3CiAgICAgICAgXQogICAgICB9LAogICAgICB7CiAgICAgICAgInBvc2l0aW9uIjogbnVsbAogICAgICB9LAogICAgICB7CiAgICAgICAgInBvc2l0aW9uIjogbnVsbAogICAgICB9CiAgICBdCiAgfQp9%22%2C%0A%20%20%20%20css_file%3D%22style3.css%22%2C%0A)%0A%0A%0A%40app.cell%0Adef%20_()%3A%0A%20%20%20%20import%20marimo%20as%20mo%0A%20%20%20%20from%20marimo%20import%20ui%0A%0A%20%20%20%20%23%20Return%20widgets%20to%20use%20in%20next%20cell%0A%20%20%20%20return%20mo%2C%20ui%0A%0A%0A%40app.cell%0Adef%20_(mo)%3A%0A%20%20%20%20mo.md(r%22%22%22%20%22%22%22)%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_()%3A%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_()%3A%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_(mo)%3A%0A%20%20%20%20name%20%3D%20%22Krystyna%20Wells%22%0A%20%20%20%20role%20%3D%20%22BSc%20Computer%20Science%20(Year%202)%22%0A%20%20%20%20photo%20%3D%20%22https%3A%2F%2Fraw.githubusercontent.com%2Fkrystynawells%2Fprofile-assets%2Fmain%2FScreenshot%25202025-10-08%2520at%252011.46.27.png%22%0A%20%20%20%20gif%20%3D%20%22https%3A%2F%2Fmedia0.giphy.com%2Fmedia%2Fv1.Y2lkPTc5MGI3NjExamRrY2VxZTlxMGJpdnB5eWhzdXlvbnVwOGNnZ3FtdXNjcTVrMHBpciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw%2FR6oW8JAJxqRxe%2Fgiphy.gif%22%0A%0A%20%20%20%20mo.hstack(%0A%20%20%20%20%20%20%20%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%23%20left%20side%3A%20photo%20%2B%20text%0A%20%20%20%20%20%20%20%20%20%20%20%20mo.hstack(%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20mo.image(src%3Dphoto%2C%20width%3D%22200px%22%2C%20height%3D%22140px%22%2C%20rounded%3DTrue)%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20mo.vstack(%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20mo.md(f%22%3Cspan%20style%3D'font-size%3A32px%3B%20font-weight%3A600%3B'%3E%7Bname%7D%3C%2Fspan%3E%22)%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20mo.md(f%22%3Cspan%20style%3D'font-size%3A20px%3B%20color%3A%23555%3B%20font-style%3Aitalic%3B'%3E%7Brole%7D%3C%2Fspan%3E%22)%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20align%3D%22start%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20justify%3D%22center%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20gap%3D%22xs%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20)%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20align%3D%22center%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20gap%3D%22xl%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20)%2C%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%23%20right%20side%3A%20gif%0A%20%20%20%20%20%20%20%20%20%20%20%20mo.image(src%3Dgif%2C%20width%3D%22180px%22%2C%20height%3D%22auto%22%2C%20rounded%3DTrue)%2C%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20justify%3D%22space-between%22%2C%20%20%20%23%20pushes%20them%20apart%20horizontally%0A%20%20%20%20%20%20%20%20align%3D%22center%22%2C%20%20%20%20%20%20%20%20%20%20%20%20%20%23%20vertical%20alignment%0A%20%20%20%20%20%20%20%20gap%3D%22xl%22%0A%20%20%20%20)%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_(mo)%3A%0A%20%20%20%20mo.md(r%22%22%22----------------------------------------%22%22%22)%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_(mo)%3A%0A%20%20%20%20mo.vstack(%0A%20%20%20%20%20%20%20%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20mo.md(%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22%22%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20border%3A%202px%20solid%20%23ffb6c1%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20border-radius%3A%2012px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20padding%3A%2016px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20background-color%3A%20%23fff5f8%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20box-shadow%3A%202px%202px%206px%20rgba(255%2C%20182%2C%20193%2C%200.2)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%20style%3D%22margin-top%3A0%3B%22%3E%F0%9F%92%AB%20About%20Me%3C%2Fh3%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Hi!%20I'm%20%3Cstrong%3EKrystyna%20Wells%3C%2Fstrong%3E%2C%20a%20second-year%20Computer%20Science%20student%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20at%20the%20%3Cstrong%3EUniversity%20of%20the%20Arts%20London%3C%2Fstrong%3E.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20I%E2%80%99m%20passionate%20about%20combining%20creativity%20and%20technology%20%E2%80%94%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20from%20building%20IoT%20systems%20to%20exploring%20AI%20for%20design%20and%20interaction.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Currently%2C%20I%E2%80%99m%20the%20%3Cstrong%3ETreasurer%20of%20the%20FinTech%20Society%3C%2Fstrong%3E%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20and%20I%20love%20collaborating%20on%20hands-on%20tech%20projects.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22%22%22%0A%20%20%20%20%20%20%20%20%20%20%20%20)%0A%20%20%20%20%20%20%20%20%5D%0A%20%20%20%20)%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_(mo)%3A%0A%20%20%20%20projects%20%3D%20%5B%0A%20%20%20%20%20%20%20%20%7B%22name%22%3A%22IoT%20Desk%20Health%20Helper%22%2C%22tags%22%3A%5B%22IoT%22%2C%22ESP8266%22%2C%22MQTT%22%2C%22Python%22%5D%2C%0A%20%20%20%20%20%20%20%20%20%22link%22%3A%22https%3A%2F%2Fgithub.com%2Fkrystynawells%2FIoT-Desk-Assistant%22%2C%0A%20%20%20%20%20%20%20%20%22summary%22%3A%20%22An%20IoT-based%20desk%20health%20assistant%20that%20helps%20promote%20healthier%20study%20and%20work%20habits.%20The%20system%20reminds%20users%20to%20stay%20hydrated%2C%20maintain%20a%20good%20sitting%20distance%20from%20the%20screen%2C%20and%20ensure%20a%20comfortable%20workspace%20environment.%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%22name%22%3A%22Algorithms%20mini-labs%22%2C%22tags%22%3A%5B%22Python%22%2C%22Algorithms%22%5D%2C%0A%20%20%20%20%20%20%20%20%20%22link%22%3A%22https%3A%2F%2Fgithub.com%2Fkrystynawells%2Falgorithms-labs%22%2C%0A%20%20%20%20%20%20%20%20%20%22summary%22%3A%22Practice%20problems%20%2B%20small%20visualizations.%22%7D%2C%0A%20%20%20%20%20%20%20%20%7B%22name%22%3A%22FinTech%20Society%20minisite%22%2C%22tags%22%3A%5B%22HTML%22%2C%22CSS%22%2C%22JS%22%5D%2C%0A%20%20%20%20%20%20%20%20%20%22link%22%3A%22https%3A%2F%2Fgithub.com%2Fkrystynawells%2Ffintech-site%22%2C%0A%20%20%20%20%20%20%20%20%20%22summary%22%3A%22Simple%20landing%20page%20for%20events%20%26%20sign-ups.%22%7D%2C%0A%20%20%20%20%5D%0A%0A%20%20%20%20names%20%3D%20%5Bp%5B%22name%22%5D%20for%20p%20in%20projects%5D%0A%20%20%20%20select%20%3D%20mo.ui.dropdown(options%3Dnames%2C%20value%3Dnames%5B0%5D%2C%20label%3D%22Choose%20a%20project%22)%0A%0A%20%20%20%20%23%20Title%20%2F%20pink%20box%0A%20%20%20%20mo.md(%22%22%22%0A%20%20%20%20%3Cdiv%20style%3D%22%0A%20%20%20%20%20%20%20%20border%3A%202px%20solid%20%23ffb6c1%3B%20border-radius%3A%2012px%3B%20padding%3A%2016px%3B%0A%20%20%20%20%20%20%20%20background-color%3A%20%23fff5f8%3B%20box-shadow%3A%202px%202px%206px%20rgba(255%2C182%2C193%2C0.2)%3B%0A%20%20%20%20%20%20%20%20margin-top%3A%2012px%3B%0A%20%20%20%20%22%3E%0A%20%20%20%20%20%20%20%20%3Ch3%20style%3D%22margin%3A0%200%208px%200%3B%22%3E%F0%9F%93%81%20Projects%3C%2Fh3%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%22%22%22)%0A%0A%20%20%20%20%23%20%E2%AC%87%EF%B8%8F%20This%20renders%20the%20dropdown%20(no%20mo.display%20needed)%0A%20%20%20%20select%0A%0A%20%20%20%20%23%20make%20available%20to%20next%20cell%0A%20%20%20%20return%20projects%2C%20select%0A%0A%0A%40app.cell%0Adef%20_(mo%2C%20projects%2C%20select)%3A%0A%20%20%20%20def%20_()%3A%0A%20%20%20%20%20%20%20%20chosen%20%3D%20next(p%20for%20p%20in%20projects%20if%20p%5B%22name%22%5D%20%3D%3D%20select.value)%0A%20%20%20%20%20%20%20%20return%20mo.md(f%22%22%22%0A%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%22border%3A1px%20solid%20%23ffd6e2%3B%20border-radius%3A12px%3B%20padding%3A14px%3B%20background%3A%23fff%3B%20margin-top%3A10px%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%22font-size%3A18px%3B%20font-weight%3A600%3B%20margin-bottom%3A4px%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7Bchosen%5B'name'%5D%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%22color%3A%23666%3B%20margin-bottom%3A8px%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B'%2C%20'.join(chosen%5B'tags'%5D)%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%22margin-bottom%3A10px%3B%22%3E%7Bchosen%5B'summary'%5D%7D%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%7Bchosen%5B'link'%5D%7D%22%20target%3D%22_blank%22%20style%3D%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20display%3Ainline-block%3B%20padding%3A8px%2012px%3B%20border-radius%3A10px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20border%3A1px%20solid%20%23ffb6c1%3B%20text-decoration%3Anone%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22%3E%F0%9F%94%97%20View%20on%20GitHub%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%22%22%22)%0A%0A%0A%20%20%20%20_()%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_(mo)%3A%0A%20%20%20%20mo.md(%0A%20%20%20%20%20%20%20%20r%22%22%22%0A%20%20%20%20%23%23%201.%20Date%20of%20birth%0A%20%20%20%20Can%20you%20guess%20what%20year%20I%20was%20born%3F%0A%20%20%20%20%22%22%22%0A%20%20%20%20)%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_(mo)%3A%0A%20%20%20%20import%20numpy%20as%20np%0A%0A%20%20%20%20year%20%3D%201987%0A%20%20%20%20numbers%20%3D%20np.arange(1910%2C2000)%0A%20%20%20%20num%20%3D%20numbers.tolist()%0A%20%20%20%20dropdown%20%3D%20mo.ui.dropdown(%0A%20%20%20%20%20%20%20%20options%3Dnum%2C%20value%3D1910%2C%20label%3D%22Born%20in%3A%22%0A%20%20%20%20)%0A%20%20%20%20dropdown%0A%20%20%20%20return%20(dropdown%2C)%0A%0A%0A%40app.cell%0Adef%20_(dropdown%2C%20mo)%3A%0A%20%20%20%20if%20dropdown.value%20%3C%201987%3A%0A%20%20%20%20%20%20%20%20content%20%3D%20mo.md(%22%22%22%0A%20%20%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%20%20%40keyframes%20blink%20%7B%2050%25%20%7B%20opacity%3A%200%3B%20%7D%20%7D%0A%20%20%20%20%20%20%20%20%20%20.blinking%20%7B%20animation%3A%20blink%201s%20step-start%20infinite%3B%20color%3A%20red%3B%20font-weight%3A%20bold%3B%20%7D%0A%20%20%20%20%20%20%20%20%3C%2Fstyle%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22blinking%22%3E%F0%9F%98%A1%20I'm%20not%20that%20old%20%F0%9F%98%A1%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%22%22%22)%0A%20%20%20%20elif%20dropdown.value%20%3D%3D%201987%3A%0A%20%20%20%20%20%20%20%20content%20%3D%20mo.md(%22%22%22%0A%20%20%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%20%20%40keyframes%20blink%20%7B%2050%25%20%7B%20opacity%3A%200%3B%20%7D%20%7D%0A%20%20%20%20%20%20%20%20%20%20.blinking%20%7B%20animation%3A%20blink%201s%20step-start%20infinite%3B%20color%3A%20green%3B%20font-weight%3A%20bold%3B%20%7D%0A%20%20%20%20%20%20%20%20%3C%2Fstyle%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22blinking%22%3E%F0%9F%98%8E%20Right%20in%20the%20spot!%20%F0%9F%98%8E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%22%22%22)%0A%20%20%20%20else%3A%0A%20%20%20%20%20%20%20%20content%20%3D%20mo.md(%22%22%22%0A%20%20%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%20%20%40keyframes%20blink%20%7B%2050%25%20%7B%20opacity%3A%200%3B%20%7D%20%7D%0A%20%20%20%20%20%20%20%20%20%20.blinking%20%7B%20animation%3A%20blink%201s%20step-start%20infinite%3B%20color%3A%20blue%3B%20font-weight%3A%20bold%3B%20%7D%0A%20%20%20%20%20%20%20%20%3C%2Fstyle%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22blinking%22%3E%20%F0%9F%91%B4%20Thank%20you!%20But%20I%20am%20older%20%F0%9F%91%B4%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%22%22%22)%0A%0A%20%20%20%20content%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_(mo)%3A%0A%20%20%20%20mo.md(%0A%20%20%20%20%20%20%20%20r%22%22%22%0A%20%20%20%20_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-%0A%0A%20%20%20%20%23%23%202.%20My%20Work%20Timeline%0A%20%20%20%20%22%22%22%0A%20%20%20%20)%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_(ui)%3A%0A%20%20%20%20max_points%20%3D%20ui.number(value%3D20%2C%20label%3D%22Number%20of%20points%20to%20show%22)%0A%20%20%20%20max_points%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_(mo)%3A%0A%20%20%20%20yearS%20%3D%20mo.ui.slider(2012%2C%202025%2C%20value%3D2020%2C%20label%3D%22Select%20Year%22)%0A%20%20%20%20yearS%0A%20%20%20%20return%20(yearS%2C)%0A%0A%0A%40app.cell%0Adef%20_(mo%2C%20yearS)%3A%0A%20%20%20%20if%20yearS.value%20%3C%202013%3A%0A%20%20%20%20%20%20%20%20contentS%20%3D%20mo.md(f%22%22%22%0A%20%20%20%20%20%20%20%20%3Ch3%3E%20%F0%9F%8C%8E%20Travelling%20(Year%20%7ByearS.value%7D)%3C%2Fh2%3E%0A%20%20%20%20%20%20%20%20%3Cp%3ETravelled%20around%20South%20America%20and%20Latin%20America.%20Got%20stung%20by%20a%20scorpio%20in%20Guatemala.%20Got%20robbed%20in%20Venezuela%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22blinking%22%3E%F0%9F%8F%85%20Got%20stronger!%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20blink%20%7B%7B%2050%25%20%7B%7B%20opacity%3A%200%3B%20%7D%7D%20%7D%7D%0A%20%20%20%20%20%20%20%20.blinking%20%7B%7B%20animation%3A%20blink%201s%20step-start%20infinite%3B%20color%3A%20red%3B%20font-weight%3A%20bold%3B%20%7D%7D%0A%20%20%20%20%20%20%20%20%3C%2Fstyle%3E%0A%20%20%20%20%20%20%20%20%22%22%22)%0A%20%20%20%20elif%20yearS.value%20%3C%202016%3A%0A%20%20%20%20%20%20%20%20contentS%20%3D%20mo.md(f%22%22%22%0A%20%20%20%20%20%20%20%20%3Ch3%3E%F0%9F%93%9A%20MSc%20in%20Physics%20(Year%20%7ByearS.value%7D)%3C%2Fh2%3E%0A%20%20%20%20%20%20%20%20%3Cp%3E%20UNAM%20Mexico.%20Studied%20how%20physics%20models%20can%20be%20applied%20to%20ecological%20and%20social%20systems%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22blinking%22%3E%F0%9F%8F%86%20My%20first%20paper!%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20blink%20%7B%7B%2050%25%20%7B%7B%20opacity%3A%200%3B%20%7D%7D%20%7D%7D%0A%20%20%20%20%20%20%20%20.blinking%20%7B%7B%20animation%3A%20blink%201s%20step-start%20infinite%3B%20color%3A%20orange%3B%20font-weight%3A%20bold%3B%20%7D%7D%0A%20%20%20%20%20%20%20%20%3C%2Fstyle%3E%0A%20%20%20%20%20%20%20%20%22%22%22)%0A%20%20%20%20elif%20yearS.value%20%3C%202020%3A%0A%20%20%20%20%20%20%20%20contentS%20%3D%20mo.md(f%22%22%22%0A%20%20%20%20%20%20%20%20%3Ch3%3E%F0%9F%92%BB%20Project%20lead%20Austral%20University%20(Year%20%7ByearS.value%7D)%3C%2Fh2%3E%0A%20%20%20%20%20%20%20%20%3Cp%3E%20Designed%20interactive%20platform%20for%20urban%20monitoring%20from%20smart%20sensors.%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22blinking%22%3E%F0%9F%8F%86%20My%20second%20paper!%20(%3Ca%20href%3D%22https%3A%2F%2Froyalsocietypublishing.org%2Fdoi%2F10.1098%2Frsos.180749%22%3E%20READ%20HERE%3C%2Fa%3E)%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20blink%20%7B%7B%2050%25%20%7B%7B%20opacity%3A%200%3B%20%7D%7D%20%7D%7D%0A%20%20%20%20%20%20%20%20.blinking%20%7B%7B%20animation%3A%20blink%201s%20step-start%20infinite%3B%20color%3A%20orange%3B%20font-weight%3A%20bold%3B%20%7D%7D%0A%20%20%20%20%20%20%20%20%3C%2Fstyle%3E%0A%20%20%20%20%20%20%20%20%22%22%22)%0A%20%20%20%20elif%20yearS.value%20%3C%202024%3A%0A%20%20%20%20%20%20%20%20contentS%20%3D%20mo.md(f%22%22%22%0A%20%20%20%20%20%20%20%20%3Ch3%3E%F0%9F%93%9A%20PhD%20Queen%20Mary%20(Year%20%7ByearS.value%7D)%3C%2Fh2%3E%0A%20%20%20%20%20%20%20%20%3Cp%3E%20Media%20and%20Arts%20Technology.%20Focused%20on%20design%20of%20digital%20musical%20instruments.%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22blinking%22%3E%F0%9F%8F%86%20Check%20our%20papers!%20(%3Ca%20href%3D%22https%3A%2F%2Fteodannemann.wordpress.com%2Fpublications-for-nime2023%2F%22%3E%20READ%20HERE%3C%2Fa%3E)%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20blink%20%7B%7B%2050%25%20%7B%7B%20opacity%3A%200%3B%20%7D%7D%20%7D%7D%0A%20%20%20%20%20%20%20%20.blinking%20%7B%7B%20animation%3A%20blink%201s%20step-start%20infinite%3B%20color%3A%20orange%3B%20font-weight%3A%20bold%3B%20%7D%7D%0A%20%20%20%20%20%20%20%20%3C%2Fstyle%3E%0A%20%20%20%20%20%20%20%20%22%22%22)%0A%20%20%20%20else%3A%0A%20%20%20%20%20%20%20%20contentS%20%3D%20mo.md(f%22%22%22%0A%20%20%20%20%20%20%20%20%3Ch3%3E%20%F0%9F%91%BE%20Senior%20Lecturer%20%40%20CCI%20(Year%20%7ByearS.value%7D)%3C%2Fh2%3E%0A%20%20%20%20%20%20%20%20%3Cp%3ECourse%20Leader%20for%20MSc%20Data%20Science%20and%20AI%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22blinking%22%3E%F0%9F%A5%87%20Teaching%20UGs%20and%20PGs!%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20blink%20%7B%7B%2050%25%20%7B%7B%20opacity%3A%200%3B%20%7D%7D%20%7D%7D%0A%20%20%20%20%20%20%20%20.blinking%20%7B%7B%20animation%3A%20blink%201s%20step-start%20infinite%3B%20color%3A%20blue%3B%20font-weight%3A%20bold%3B%20%7D%7D%0A%20%20%20%20%20%20%20%20%3C%2Fstyle%3E%0A%20%20%20%20%20%20%20%20%22%22%22)%0A%20%20%20%20contentS%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_(mo)%3A%0A%20%20%20%20mo.md(%0A%20%20%20%20%20%20%20%20r%22%22%22%0A%20%20%20%20_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-%0A%0A%20%20%20%20%23%23%203.%20My%20Skills%20Development%20Timeline%0A%20%20%20%20%22%22%22%0A%20%20%20%20)%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_(mo)%3A%0A%20%20%20%20yearP%20%3D%20mo.ui.slider(2015%2C%202025%2C%20value%3D2020%2C%20label%3D%22Select%20Year%22)%0A%20%20%20%20yearP%0A%20%20%20%20return%20(yearP%2C)%0A%0A%0A%40app.cell%0Adef%20_()%3A%0A%20%20%20%20import%20plotly.graph_objs%20as%20go%0A%20%20%20%20return%20(go%2C)%0A%0A%0A%40app.cell%0Adef%20_(go%2C%20mo%2C%20yearP)%3A%0A%20%20%20%20%23%20Example%20skill%20values%20based%20on%20year%0A%20%20%20%20skills%20%3D%20%7B%0A%20%20%20%20%20%20%20%20%22Python%22%3A%20min(100%2C%20(yearP.value-2015)*15)%2C%0A%20%20%20%20%20%20%20%20%22Machine%20Learning%22%3A%20min(100%2C%20max(0%2C%20(yearP.value-2017)*20))%2C%0A%20%20%20%20%20%20%20%20%22Dashboards%22%3A%20min(100%2C%20max(0%2C%20(yearP.value-2018)*25))%2C%0A%20%20%20%20%20%20%20%20%22Leadership%22%3A%20min(100%2C%20max(0%2C%20(yearP.value-2019)*30))%2C%0A%20%20%20%20%20%20%20%20%22Communication%22%3A%20min(100%2C%20max(0%2C%20(yearP.value-2015)*10%20%2B%2040))%2C%0A%20%20%20%20%7D%0A%0A%20%20%20%20fig%20%3D%20go.Figure()%0A%0A%20%20%20%20%23%20Radar%20plot%0A%20%20%20%20fig.add_trace(go.Scatterpolar(%0A%20%20%20%20%20%20%20%20r%3Dlist(skills.values())%2C%0A%20%20%20%20%20%20%20%20theta%3Dlist(skills.keys())%2C%0A%20%20%20%20%20%20%20%20fill%3D'toself'%2C%0A%20%20%20%20%20%20%20%20name%3Df'Year%20%7ByearP.value%7D'%2C%0A%20%20%20%20%20%20%20%20marker%3Ddict(color%3D'rgba(26%2C%20188%2C%20156%2C%200.7)')%0A%20%20%20%20))%0A%0A%20%20%20%20fig.update_layout(%0A%20%20%20%20%20%20%20%20polar%3Ddict(%0A%20%20%20%20%20%20%20%20%20%20%20%20radialaxis%3Ddict(visible%3DTrue%2C%20range%3D%5B0%2C%20100%5D)%0A%20%20%20%20%20%20%20%20)%2C%0A%20%20%20%20%20%20%20%20showlegend%3DTrue%2C%0A%20%20%20%20%20%20%20%20title%3Df%22Skills%20Overview%20-%20%7ByearP.value%7D%22%2C%0A%20%20%20%20%20%20%20%20width%3D370%2C%20%20%20%23%20smaller%20width%0A%20%20%20%20%20%20%20%20height%3D370%20%20%20%23%20smaller%20height%0A%20%20%20%20)%0A%0A%20%20%20%20mo.ui.plotly(fig)%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_()%3A%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_()%3A%0A%20%20%20%20return%0A%0A%0Aif%20__name__%20%3D%3D%20%22__main__%22%3A%0A%20%20%20%20app.run()%0A</marimo-code></head>
+  <body>
+    <div id="root"></div>
+    <!-- This is a portal for the data editor to render in -->
+    <div id="portal" data-testid="glide-portal" style="position: fixed; left: 0; top: 0; z-index: 9999"></div>
+    <script data-marimo="true">
+      window.__MARIMO_MOUNT_CONFIG__ = {
+            "filename": "notebook.py",
+            "mode": "read",
+            "version": "0.16.5",
+            "serverToken": "unused",
+            "config": {"ai": {"models": {"custom_models": [], "displayed_models": []}}, "completion": {"activate_on_typing": true, "copilot": false}, "display": {"cell_output": "below", "code_editor_font_size": 14, "dataframes": "rich", "default_table_max_columns": 50, "default_table_page_size": 10, "default_width": "medium", "reference_highlighting": false, "theme": "light"}, "formatting": {"line_length": 79}, "keymap": {"overrides": {}, "preset": "default"}, "language_servers": {"pylsp": {"enable_flake8": false, "enable_mypy": true, "enable_pydocstyle": false, "enable_pyflakes": false, "enable_pylint": false, "enable_ruff": true, "enabled": true}}, "mcp": {"mcpServers": {}, "presets": []}, "package_management": {"manager": "pip"}, "runtime": {"auto_instantiate": true, "auto_reload": "off", "default_sql_output": "auto", "on_cell_change": "autorun", "output_max_bytes": 8000000, "reactive_tests": true, "std_stream_max_bytes": 1000000, "watcher_on_save": "lazy"}, "save": {"autosave": "off", "autosave_delay": 1000, "format_on_save": false}, "server": {"browser": "default", "follow_symlink": false}, "snippets": {"custom_paths": [], "include_default_snippets": true}},
+            "configOverrides": {},
+            "appConfig": {"css_file": "style3.css", "layout_file": "data:application/json;base64,ewogICJ0eXBlIjogImdyaWQiLAogICJkYXRhIjogewogICAgImNvbHVtbnMiOiAyNCwKICAgICJyb3dIZWlnaHQiOiAyMCwKICAgICJtYXhXaWR0aCI6IDYwMCwKICAgICJib3JkZXJlZCI6IHRydWUsCiAgICAiY2VsbHMiOiBbCiAgICAgIHsKICAgICAgICAicG9zaXRpb24iOiBudWxsCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAicG9zaXRpb24iOiBbCiAgICAgICAgICAyLAogICAgICAgICAgMSwKICAgICAgICAgIDEzLAogICAgICAgICAgNAogICAgICAgIF0KICAgICAgfSwKICAgICAgewogICAgICAgICJwb3NpdGlvbiI6IG51bGwKICAgICAgfSwKICAgICAgewogICAgICAgICJwb3NpdGlvbiI6IG51bGwKICAgICAgfSwKICAgICAgewogICAgICAgICJwb3NpdGlvbiI6IG51bGwKICAgICAgfSwKICAgICAgewogICAgICAgICJwb3NpdGlvbiI6IFsKICAgICAgICAgIDIsCiAgICAgICAgICA1LAogICAgICAgICAgMTMsCiAgICAgICAgICAxCiAgICAgICAgXQogICAgICB9LAogICAgICB7CiAgICAgICAgInBvc2l0aW9uIjogbnVsbAogICAgICB9LAogICAgICB7CiAgICAgICAgInBvc2l0aW9uIjogbnVsbAogICAgICB9LAogICAgICB7CiAgICAgICAgInBvc2l0aW9uIjogbnVsbAogICAgICB9LAogICAgICB7CiAgICAgICAgInBvc2l0aW9uIjogWwogICAgICAgICAgMiwKICAgICAgICAgIDYsCiAgICAgICAgICAxMywKICAgICAgICAgIDUKICAgICAgICBdCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAicG9zaXRpb24iOiBbCiAgICAgICAgICAyLAogICAgICAgICAgMTEsCiAgICAgICAgICA5LAogICAgICAgICAgMgogICAgICAgIF0KICAgICAgfSwKICAgICAgewogICAgICAgICJwb3NpdGlvbiI6IFsKICAgICAgICAgIDExLAogICAgICAgICAgMTEsCiAgICAgICAgICAxMSwKICAgICAgICAgIDIKICAgICAgICBdCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAicG9zaXRpb24iOiBbCiAgICAgICAgICAyLAogICAgICAgICAgMTMsCiAgICAgICAgICAyMSwKICAgICAgICAgIDUKICAgICAgICBdCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAicG9zaXRpb24iOiBudWxsCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAicG9zaXRpb24iOiBbCiAgICAgICAgICAyLAogICAgICAgICAgMTgsCiAgICAgICAgICAxOSwKICAgICAgICAgIDMKICAgICAgICBdLAogICAgICAgICJzaWRlIjogImxlZnQiCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAicG9zaXRpb24iOiBbCiAgICAgICAgICAyLAogICAgICAgICAgMjEsCiAgICAgICAgICAxOSwKICAgICAgICAgIDgKICAgICAgICBdCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAicG9zaXRpb24iOiBbCiAgICAgICAgICAyLAogICAgICAgICAgMjksCiAgICAgICAgICAxOSwKICAgICAgICAgIDUKICAgICAgICBdCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAicG9zaXRpb24iOiBbCiAgICAgICAgICAyLAogICAgICAgICAgMzQsCiAgICAgICAgICAyMiwKICAgICAgICAgIDMKICAgICAgICBdCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAicG9zaXRpb24iOiBudWxsCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAicG9zaXRpb24iOiBbCiAgICAgICAgICAyLAogICAgICAgICAgMzcsCiAgICAgICAgICAyMiwKICAgICAgICAgIDE3CiAgICAgICAgXQogICAgICB9LAogICAgICB7CiAgICAgICAgInBvc2l0aW9uIjogbnVsbAogICAgICB9LAogICAgICB7CiAgICAgICAgInBvc2l0aW9uIjogbnVsbAogICAgICB9CiAgICBdCiAgfQp9", "sql_output": "auto", "width": "compact"},
+            "view": {"showAppCode": false},
+            "notebook": null,
+            "session": null,
+            "runtimeConfig": null,
+        };
+    </script>
+  </body>
+</html>

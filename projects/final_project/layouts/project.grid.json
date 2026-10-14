@@ -1,0 +1,306 @@
+{
+  "type": "grid",
+  "data": {
+    "columns": 24,
+    "rowHeight": 20,
+    "maxWidth": 1700,
+    "bordered": false,
+    "cells": [
+      {
+        "position": [
+          0,
+          0,
+          7,
+          12
+        ]
+      },
+      {
+        "position": [
+          0,
+          12,
+          7,
+          29
+        ]
+      },
+      {
+        "position": null
+      },
+      {
+        "position": null
+      },
+      {
+        "position": null
+      },
+      {
+        "position": null
+      },
+      {
+        "position": [
+          7,
+          0,
+          17,
+          6
+        ]
+      },
+      {
+        "position": [
+          7,
+          6,
+          17,
+          12
+        ]
+      },
+      {
+        "position": [
+          7,
+          18,
+          9,
+          18
+        ]
+      },
+      {
+        "position": null
+      },
+      {
+        "position": [
+          16,
+          18,
+          8,
+          18
+        ]
+      },
+      {
+        "position": [
+          7,
+          36,
+          17,
+          22
+        ]
+      },
+      {
+        "position": [
+          7,
+          58,
+          17,
+          7
+        ]
+      },
+      {
+        "position": [
+          7,
+          65,
+          17,
+          12
+        ]
+      },
+      {
+        "position": null
+      },
+      {
+        "position": null
+      },
+      {
+        "position": [
+          7,
+          77,
+          8,
+          4
+        ]
+      },
+      {
+        "position": [
+          7,
+          81,
+          8,
+          2
+        ]
+      },
+      {
+        "position": [
+          7,
+          83,
+          8,
+          13
+        ]
+      },
+      {
+        "position": [
+          15,
+          77,
+          9,
+          19
+        ]
+      },
+      {
+        "position": [
+          7,
+          96,
+          17,
+          21
+        ]
+      },
+      {
+        "position": [
+          7,
+          117,
+          17,
+          6
+        ]
+      },
+      {
+        "position": [
+          7,
+          123,
+          17,
+          14
+        ]
+      },
+      {
+        "position": null
+      },
+      {
+        "position": [
+          7,
+          137,
+          8,
+          21
+        ]
+      },
+      {
+        "position": [
+          15,
+          137,
+          9,
+          21
+        ]
+      },
+      {
+        "position": [
+          7,
+          158,
+          17,
+          22
+        ]
+      },
+      {
+        "position": [
+          7,
+          180,
+          17,
+          7
+        ]
+      },
+      {
+        "position": [
+          7,
+          187,
+          17,
+          13
+        ]
+      },
+      {
+        "position": null
+      },
+      {
+        "position": [
+          7,
+          200,
+          8,
+          15
+        ]
+      },
+      {
+        "position": null
+      },
+      {
+        "position": null
+      },
+      {
+        "position": [
+          7,
+          215,
+          8,
+          9
+        ]
+      },
+      {
+        "position": [
+          15,
+          200,
+          9,
+          24
+        ]
+      },
+      {
+        "position": [
+          7,
+          224,
+          17,
+          37
+        ]
+      },
+      {
+        "position": [
+          0,
+          141,
+          7,
+          16
+        ]
+      },
+      {
+        "position": [
+          0,
+          87,
+          7,
+          23
+        ]
+      },
+      {
+        "position": [
+          0,
+          41,
+          7,
+          13
+        ]
+      },
+      {
+        "position": [
+          0,
+          191,
+          7,
+          16
+        ]
+      },
+      {
+        "position": [
+          0,
+          157,
+          7,
+          34
+        ]
+      },
+      {
+        "position": [
+          0,
+          110,
+          7,
+          31
+        ]
+      },
+      {
+        "position": [
+          0,
+          54,
+          7,
+          33
+        ]
+      },
+      {
+        "position": null
+      },
+      {
+        "position": null
+      }
+    ]
+  }
+}
